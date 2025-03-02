@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\Fork\\DZ1\\New Unity Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\New Unity Project\\assets\\scripts\\pixelcrew\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}|Assembly-CSharp.csproj|d:\\fork\\dz1\\new unity project\\assets\\scripts\\pixelcrew\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}|Assembly-CSharp.csproj|d:\\fork\\dz1\\new unity project\\assets\\scripts\\pixelcrew\\heroinputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\New Unity Project\\assets\\scripts\\pixelcrew\\layercheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\layercheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\New Unity Project\\assets\\scripts\\pixelcrew\\heroinputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\heroinputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,7 +32,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Hero.cs",
               "ToolTip": "D:\\Fork\\DZ1\\New Unity Project\\Assets\\Scripts\\PixelCrew\\Hero.cs",
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Hero.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBQAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwBUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T20:53:58.404Z",
               "IsPinned": true,
@@ -45,12 +49,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LayerCheck.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\New Unity Project\\Assets\\Scripts\\PixelCrew\\LayerCheck.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\LayerCheck.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\New Unity Project\\Assets\\Scripts\\PixelCrew\\LayerCheck.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\LayerCheck.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T15:26:31.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HeroInputReader.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\New Unity Project\\Assets\\Scripts\\PixelCrew\\HeroInputReader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\HeroInputReader.cs",
               "ToolTip": "D:\\Fork\\DZ1\\New Unity Project\\Assets\\Scripts\\PixelCrew\\HeroInputReader.cs",
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\HeroInputReader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T20:57:40.766Z",
               "EditorCaption": ""

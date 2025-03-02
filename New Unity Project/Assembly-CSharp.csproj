@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PixelCrew\Hero.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\HeroInputReader.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\LayerCheck.cs" />
     <Compile Include="Assets\UserInput\HEroInputAction.cs" />
   </ItemGroup>
   <ItemGroup>
