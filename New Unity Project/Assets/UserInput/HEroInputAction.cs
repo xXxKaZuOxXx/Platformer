@@ -29,12 +29,12 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
             ""actions"": [
                 {
                     ""name"": ""HorizontalMovement"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""7ffd8f89-c596-43ae-aa1c-b67335c976c4"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""SaySomething"",
