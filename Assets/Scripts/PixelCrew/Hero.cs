@@ -8,6 +8,8 @@ public class Hero : MonoBehaviour
     private Rigidbody2D _rigidbody;
     [SerializeField]private float _speed;
     [SerializeField] private float _jumpspeed;
+
+    public int Score { get; set; } = 0;
   
 
     [SerializeField] private LayerCheck _groundCheck;

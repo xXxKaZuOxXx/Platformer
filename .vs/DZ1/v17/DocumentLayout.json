@@ -1,0 +1,145 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Fork\\DZ1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|d:\\fork\\dz1\\assets\\scripts\\pixelcrew\\components\\getscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\components\\getscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|d:\\fork\\dz1\\assets\\scripts\\pixelcrew\\heroinputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\heroinputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\components\\entertrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\components\\entertrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\components\\destroyobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\components\\destroyobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\followtarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\followtarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\components\\reloadlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\components\\reloadlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HeroInputReader.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\HeroInputReader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\HeroInputReader.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\HeroInputReader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\HeroInputReader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T00:46:00.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetScore.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\GetScore.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\GetScore.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\GetScore.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Components\\GetScore.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T00:34:15.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Hero.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Hero.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Hero.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Hero.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Hero.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T00:33:15.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FollowTarget.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\FollowTarget.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\FollowTarget.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\FollowTarget.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\FollowTarget.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T23:16:09.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DestroyObject.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\DestroyObject.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\DestroyObject.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\DestroyObject.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Components\\DestroyObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T19:20:19.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnterTrigger.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\EnterTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\EnterTrigger.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\EnterTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Components\\EnterTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T18:53:56.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReloadLevel.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\ReloadLevel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\ReloadLevel.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\ReloadLevel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Components\\ReloadLevel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T19:06:39.172Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

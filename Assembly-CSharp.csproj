@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}</ProjectGuid>
+    <ProjectGuid>{6EB22447-BC16-1550-CB79-DEC2421761E9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,6 +56,12 @@
     <Analyzer Include="E:\VISUAL STUDIO\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\PixelCrew\Components\Data_of_Score.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\DestroyObject.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\EnterTrigger.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\GetScore.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\ReloadLevel.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Hero.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\HeroInputReader.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\LayerCheck.cs" />
@@ -676,6 +682,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
