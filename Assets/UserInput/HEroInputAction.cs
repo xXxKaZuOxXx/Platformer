@@ -44,6 +44,15 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""24a415d5-c54b-41f9-9435-436ade8e0a55"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -156,6 +165,17 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
                     ""action"": ""SaySomething"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""351c5186-1fcf-4bb0-b9a2-0a334fc7dd2a"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -166,6 +186,7 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
         m_Hero = asset.FindActionMap("Hero", throwIfNotFound: true);
         m_Hero_HorizontalMovement = m_Hero.FindAction("HorizontalMovement", throwIfNotFound: true);
         m_Hero_SaySomething = m_Hero.FindAction("SaySomething", throwIfNotFound: true);
+        m_Hero_Interact = m_Hero.FindAction("Interact", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -227,12 +248,14 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
     private IHeroActions m_HeroActionsCallbackInterface;
     private readonly InputAction m_Hero_HorizontalMovement;
     private readonly InputAction m_Hero_SaySomething;
+    private readonly InputAction m_Hero_Interact;
     public struct HeroActions
     {
         private @HEroInputAction m_Wrapper;
         public HeroActions(@HEroInputAction wrapper) { m_Wrapper = wrapper; }
         public InputAction @HorizontalMovement => m_Wrapper.m_Hero_HorizontalMovement;
         public InputAction @SaySomething => m_Wrapper.m_Hero_SaySomething;
+        public InputAction @Interact => m_Wrapper.m_Hero_Interact;
         public InputActionMap Get() { return m_Wrapper.m_Hero; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -248,6 +271,9 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
                 @SaySomething.started -= m_Wrapper.m_HeroActionsCallbackInterface.OnSaySomething;
                 @SaySomething.performed -= m_Wrapper.m_HeroActionsCallbackInterface.OnSaySomething;
                 @SaySomething.canceled -= m_Wrapper.m_HeroActionsCallbackInterface.OnSaySomething;
+                @Interact.started -= m_Wrapper.m_HeroActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_HeroActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_HeroActionsCallbackInterface.OnInteract;
             }
             m_Wrapper.m_HeroActionsCallbackInterface = instance;
             if (instance != null)
@@ -258,6 +284,9 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
                 @SaySomething.started += instance.OnSaySomething;
                 @SaySomething.performed += instance.OnSaySomething;
                 @SaySomething.canceled += instance.OnSaySomething;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
             }
         }
     }
@@ -266,5 +295,6 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
     {
         void OnHorizontalMovement(InputAction.CallbackContext context);
         void OnSaySomething(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }

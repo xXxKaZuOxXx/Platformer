@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace PixelCrew
+namespace PixelCrew.Components
 {
     [RequireComponent(typeof(SpriteRenderer))]
     public class SpriteAnimation : MonoBehaviour
@@ -24,7 +24,14 @@ namespace PixelCrew
             _renderer = GetComponent<SpriteRenderer>();
             _nextFrameTime = Time.time + _secondsPerFrame;
         }
-
+        private void OnBecameInvisible()
+        {
+            enabled = false;
+        }
+        private void OnBecameVisible()
+        {
+            enabled = _isPlaying;
+        }
         private void Update()
         {
             if(_nextFrameTime > Time.time || !_isPlaying)
