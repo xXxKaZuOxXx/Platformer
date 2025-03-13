@@ -8,7 +8,7 @@ public class Hero : MonoBehaviour
     private Vector2 _direction;
     private Rigidbody2D _rigidbody;
     private Animator _animator;
-    private SpriteRenderer _sprite;
+   
     private bool _isGraunded;
     private bool _allowDubleJump;
     private bool _isJumping;
@@ -21,6 +21,10 @@ public class Hero : MonoBehaviour
     [SerializeField] private float _interactionRadius;
     [SerializeField] private LayerMask _interactionLayer;
     [SerializeField] private LayerCheck _groundCheck;
+    [SerializeField] private Spawn _footParticles;
+    [SerializeField] private Spawn _jumpParticles;
+    [SerializeField] private Spawn _fallParticles;
+    [SerializeField] private ParticleSystem _hitParticles;
 
     [SerializeField] private float _groundCheckRadius;
     [SerializeField] private Vector3 _groundCheckPositionDelta;
@@ -41,7 +45,7 @@ public class Hero : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-        _sprite = GetComponent<SpriteRenderer>();
+      
     }
     public void SetDirection(Vector2 direction)
     {
@@ -50,9 +54,11 @@ public class Hero : MonoBehaviour
     private void Update()
     {
         _isGraunded = IsGrounded();
+        
     }
     private void FixedUpdate()
     {
+        SpawnFallDust();
         var xVelocity = _direction.x * _speed;
         var yVelocity = CalculateVelocity();
         _rigidbody.velocity = new Vector2(xVelocity, yVelocity);
@@ -75,6 +81,7 @@ public class Hero : MonoBehaviour
         if (IsJumpPressing)
         {
             _isJumping = true;
+            
             yVelocity = CalculateJumpVelocity(yVelocity);
             
         }
@@ -89,13 +96,21 @@ public class Hero : MonoBehaviour
         var isFallyng = _rigidbody.velocity.y <= 0.001f;
         if (!isFallyng)
             return yVelocity;
+        if(_rigidbody.velocity.y <= 0.1f && _rigidbody.velocity.y >= -0.1f && _isGraunded)
+        {
+            SpawnJumpDust();
 
+        }
         if (_isGraunded)
+        {
             yVelocity += _jumpspeed;
+            
+        }
         else if(_allowDubleJump)
         {
             yVelocity = _jumpspeed;
-            _allowDubleJump = false;
+            SpawnJumpDust();
+             _allowDubleJump = false;
         }
         return yVelocity;
     }
@@ -103,15 +118,18 @@ public class Hero : MonoBehaviour
     {
         if (_direction.x > 0)
         {
-            _sprite.flipX = false;
+            transform.localScale = Vector3.one;
+           
         }
         else if (_direction.x < 0)
         {
-            _sprite.flipX = true;
+            transform.localScale = new Vector3(-1, 1, 1);
+            
         }
     }
     private bool IsGrounded()
     {
+       
         return _groundCheck.IsTouchingLayer;
         
     }
@@ -130,7 +148,24 @@ public class Hero : MonoBehaviour
         _isJumping = false;
         _animator.SetTrigger(Hit);
         _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _damageJumpspeed);
+
+        if (Score > 0)
+        {
+            SpawnCoins();
+        }
+        
      
+    }
+    private void SpawnCoins()
+    {
+        var numCoinsToDispose = Mathf.Min(Score, 5);
+        Score -= numCoinsToDispose;
+
+        var burst = _hitParticles.emission.GetBurst(0);
+        burst.count = numCoinsToDispose;
+        _hitParticles.emission.SetBurst(0, burst);
+        _hitParticles.gameObject.SetActive(true);
+        _hitParticles.Play();
     }
     public void Interact()
     {
@@ -148,6 +183,24 @@ public class Hero : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = IsGrounded2() ? Color.green : Color.red;
+      
         Gizmos.DrawSphere(transform.position + _groundCheckPositionDelta, _groundCheckRadius);
     }
+    public void SpawnFootDust()
+    {
+        _footParticles.SpawnTarget();
+    }
+    public void SpawnJumpDust()
+    {
+        _jumpParticles.SpawnTarget();
+    }
+    public void SpawnFallDust()
+    {
+        if(_rigidbody.velocity.y < -13 && IsGrounded2())
+        {
+            _fallParticles.SpawnTarget();
+        }
+    }
+
+
 }
