@@ -201,6 +201,16 @@ public class Hero : MonoBehaviour
             _fallParticles.SpawnTarget();
         }
     }
+    //void OnCollisionEnter2D(Collision2D col)
+    //{
+    //    if (col.transform.tag == "Platform") //передаем персонажу скорость движущихся платформ
+    //        transform.parent = col.transform;
+    //}
+    //void OnCollisionExit2D(Collision2D col)
+    //{
+    //    if (col.transform.tag == "Platform") //убираем у персонажа скорость платформы
+    //        transform.parent = null;
+    //}
 
 
 }

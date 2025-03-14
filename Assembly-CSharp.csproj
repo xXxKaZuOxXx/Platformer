@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\Components\GetScore.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Health.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Interactive.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\PlatformMove.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\ReloadLevel.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Spawn.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Switch.cs" />
