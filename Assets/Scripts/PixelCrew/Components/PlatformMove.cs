@@ -11,15 +11,12 @@ namespace PixelCrew.Components
         [SerializeField] private float _speed;
         [SerializeField] private Transform _transform;
         
-        private Rigidbody2D _rigidbody;
+       
         private bool _goOnTop = true;
         private bool _canMove = false;
         
      
-        private void LateUpdate()
-        {
-           _rigidbody = GetComponent<Rigidbody2D>();
-        }
+       
         private void FixedUpdate()
         {
             if(_canMove)
