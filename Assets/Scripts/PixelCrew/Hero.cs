@@ -9,15 +9,15 @@ public class Hero : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private Animator _animator;
    
-    private bool _isGraunded;
-    private bool _allowDubleJump;
+    private bool _isGrounded;
+    private bool _allowDoubleJump;
     private bool _isJumping;
 
     private Collider2D[] _interactionResult = new Collider2D[1];
 
     [SerializeField]private float _speed;
-    [SerializeField] private float _jumpspeed;
-    [SerializeField] private float _damageJumpspeed;
+    [SerializeField] private float _jumpSpeed;
+    [SerializeField] private float _damageJumpSpeed;
     [SerializeField] private float _interactionRadius;
     [SerializeField] private LayerMask _interactionLayer;
     [SerializeField] private LayerCheck _groundCheck;
@@ -33,7 +33,7 @@ public class Hero : MonoBehaviour
 
     public int Score { get; set; } = 0;
 
-    private static readonly int IsGraund = Animator.StringToHash("Isground");
+    private static readonly int IsGround = Animator.StringToHash("Isground");
     private static readonly int Verticalvelocity = Animator.StringToHash("Verticalvelocity");
     private static readonly int Isrunning = Animator.StringToHash("Isrunning");
     private static readonly int Hit = Animator.StringToHash("hit");
@@ -53,7 +53,7 @@ public class Hero : MonoBehaviour
     }
     private void Update()
     {
-        _isGraunded = CheckWhenGroundedByCircleCollider();
+        _isGrounded = CheckWhenGroundedByCircleCollider();
         
     }
     private void FixedUpdate()
@@ -63,7 +63,7 @@ public class Hero : MonoBehaviour
         var yVelocity = CalculateVelocity();
         _rigidbody.velocity = new Vector2(xVelocity, yVelocity);
         
-        _animator.SetBool(IsGraund, _isGraunded);
+        _animator.SetBool(IsGround, _isGrounded);
         _animator.SetFloat(Verticalvelocity, _rigidbody.velocity.y);
         _animator.SetBool(Isrunning, _direction.x != 0);
         UpdateSpriteDirection();
@@ -73,9 +73,9 @@ public class Hero : MonoBehaviour
         var yVelocity = _rigidbody.velocity.y;
    
         var IsJumpPressing = _direction.y > 0;
-        if(_isGraunded)
+        if(_isGrounded)
         {
-            _allowDubleJump = true;
+            _allowDoubleJump = true;
             _isJumping = false;
         }
         if (IsJumpPressing)
@@ -96,21 +96,21 @@ public class Hero : MonoBehaviour
         var isFallyng = _rigidbody.velocity.y <= 0.001f;
         if (!isFallyng)
             return yVelocity;
-        if(_rigidbody.velocity.y <= 0.1f && _rigidbody.velocity.y >= -0.1f && _isGraunded)
+        if(_rigidbody.velocity.y <= 0.1f && _rigidbody.velocity.y >= -0.1f && _isGrounded)
         {
             SpawnJumpDust();
 
         }
-        if (_isGraunded)
+        if (_isGrounded)
         {
-            yVelocity += _jumpspeed;
+            yVelocity += _jumpSpeed;
             
         }
-        else if(_allowDubleJump)
+        else if(_allowDoubleJump)
         {
-            yVelocity = _jumpspeed;
+            yVelocity = _jumpSpeed;
             SpawnJumpDust();
-             _allowDubleJump = false;
+             _allowDoubleJump = false;
         }
         return yVelocity;
     }
@@ -133,7 +133,7 @@ public class Hero : MonoBehaviour
         return _groundCheck.IsTouchingLayer;
         
     }
-    private bool CheckWhenGroundedByCircleCaste()
+    private bool CheckWhenGroundedByCircleCast()
     {
         var hit = Physics2D.CircleCast(transform.position + _groundCheckPositionDelta, _groundCheckRadius, Vector2.down, 0, _groundLayer);
         return hit.collider != null;
@@ -147,7 +147,7 @@ public class Hero : MonoBehaviour
     {
         _isJumping = false;
         _animator.SetTrigger(Hit);
-        _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _damageJumpspeed);
+        _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _damageJumpSpeed);
 
         if (Score > 0)
         {
@@ -182,7 +182,7 @@ public class Hero : MonoBehaviour
     }
     private void OnDrawGizmos()
     {
-        Gizmos.color = CheckWhenGroundedByCircleCaste() ? Color.green : Color.red;
+        Gizmos.color = CheckWhenGroundedByCircleCast() ? Color.green : Color.red;
       
         Gizmos.DrawSphere(transform.position + _groundCheckPositionDelta, _groundCheckRadius);
     }
@@ -196,21 +196,12 @@ public class Hero : MonoBehaviour
     }
     public void SpawnFallDust()
     {
-        if(_rigidbody.velocity.y < -13 && CheckWhenGroundedByCircleCaste())
+        if(_rigidbody.velocity.y < -13 && CheckWhenGroundedByCircleCast())
         {
             _fallParticles.SpawnTarget();
         }
     }
-    //void OnCollisionEnter2D(Collision2D col)
-    //{
-    //    if (col.transform.tag == "Platform") //передаем персонажу скорость движущихся платформ
-    //        transform.parent = col.transform;
-    //}
-    //void OnCollisionExit2D(Collision2D col)
-    //{
-    //    if (col.transform.tag == "Platform") //убираем у персонажа скорость платформы
-    //        transform.parent = null;
-    //}
+    
 
 
 }
