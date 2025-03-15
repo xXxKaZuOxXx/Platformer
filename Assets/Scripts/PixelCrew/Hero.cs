@@ -53,7 +53,7 @@ public class Hero : MonoBehaviour
     }
     private void Update()
     {
-        _isGraunded = IsGrounded();
+        _isGraunded = CheckWhenGroundedByCircleCollider();
         
     }
     private void FixedUpdate()
@@ -127,13 +127,13 @@ public class Hero : MonoBehaviour
             
         }
     }
-    private bool IsGrounded()
+    private bool CheckWhenGroundedByCircleCollider()
     {
        
         return _groundCheck.IsTouchingLayer;
         
     }
-    private bool IsGrounded2()
+    private bool CheckWhenGroundedByCircleCaste()
     {
         var hit = Physics2D.CircleCast(transform.position + _groundCheckPositionDelta, _groundCheckRadius, Vector2.down, 0, _groundLayer);
         return hit.collider != null;
@@ -182,7 +182,7 @@ public class Hero : MonoBehaviour
     }
     private void OnDrawGizmos()
     {
-        Gizmos.color = IsGrounded2() ? Color.green : Color.red;
+        Gizmos.color = CheckWhenGroundedByCircleCaste() ? Color.green : Color.red;
       
         Gizmos.DrawSphere(transform.position + _groundCheckPositionDelta, _groundCheckRadius);
     }
@@ -196,7 +196,7 @@ public class Hero : MonoBehaviour
     }
     public void SpawnFallDust()
     {
-        if(_rigidbody.velocity.y < -13 && IsGrounded2())
+        if(_rigidbody.velocity.y < -13 && CheckWhenGroundedByCircleCaste())
         {
             _fallParticles.SpawnTarget();
         }
