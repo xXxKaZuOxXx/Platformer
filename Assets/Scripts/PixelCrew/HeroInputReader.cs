@@ -34,5 +34,13 @@ public class HeroInputReader : MonoBehaviour
 
 
     }
-   
+    public void OnAttacking(InputAction.CallbackContext context)
+    {
+
+        if (context.canceled)
+            _hero.Attack();
+
+
+    }
+
 }

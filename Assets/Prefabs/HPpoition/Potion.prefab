@@ -100,18 +100,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _frameRate: 10
-  _loop: 1
-  _sprites:
-  - {fileID: 3714227102187029162, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
-  - {fileID: -6202940564662568092, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
-  - {fileID: -8747976068718324687, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
-  - {fileID: 7142050841817600938, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
-  - {fileID: -860807820763296739, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
-  - {fileID: -5249288142952506341, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
-  - {fileID: 1089735312403315716, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
-  _onComplete:
-    m_PersistentCalls:
-      m_Calls: []
+  _clips:
+  - _name: idle
+    _sprites:
+    - {fileID: 3714227102187029162, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
+    - {fileID: -6202940564662568092, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
+    - {fileID: -8747976068718324687, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
+    - {fileID: 7142050841817600938, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
+    - {fileID: -860807820763296739, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
+    - {fileID: -5249288142952506341, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
+    - {fileID: 1089735312403315716, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
+    _loop: 1
+    _allowNextClip: 0
+    _onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+  - _name: destroy
+    _sprites:
+    - {fileID: 6040734443530017722, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
+    - {fileID: 8167133005111728920, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
+    - {fileID: 2014349484240403859, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
+    - {fileID: 6326803469982491369, guid: 13264906b0445a5499f8c0ee2ca6e042, type: 3}
+    _loop: 0
+    _allowNextClip: 0
+    _onComplete:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6598312924444552760}
+          m_MethodName: DestroyObj
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!70 &6598312924444552762
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -144,26 +169,26 @@ MonoBehaviour:
   _action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6598312924444552760}
-        m_MethodName: DestroyObj
-        m_Mode: 1
+      - m_Target: {fileID: 6598312924444552761}
+        m_MethodName: ApplyDamage
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 6598312924444552761}
-        m_MethodName: ApplyDamage
-        m_Mode: 2
+      - m_Target: {fileID: 6598312924444552764}
+        m_MethodName: SetClip
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: destroy
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &6598312924444552760

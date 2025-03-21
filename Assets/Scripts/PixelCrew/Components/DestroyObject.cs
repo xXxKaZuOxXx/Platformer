@@ -6,8 +6,10 @@ namespace PixelCrew.Components
     public class DestroyObject : MonoBehaviour
     {
         [SerializeField] private GameObject _objToDestroy;
+      
         public void DestroyObj()
         {
+            
             Destroy(_objToDestroy);
         }
     }

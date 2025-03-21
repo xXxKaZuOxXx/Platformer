@@ -57,6 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CheatController.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\CheckCircleOverlap.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\ArmHero.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Damage.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Data_of_Score.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\DestroyObject.cs" />
@@ -65,16 +67,20 @@
     <Compile Include="Assets\Scripts\PixelCrew\Components\GetScore.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Health.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Interactive.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\OnDestroyAnimation.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\PlatformMove.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\ReloadLevel.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Spawn.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\SpawnCoins.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Switch.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\SwitchPrefab.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Teleport.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Hero.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\HeroInputReader.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\LayerCheck.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\SpriteAnimation.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Utils\HandlesUtils.cs" />
     <Compile Include="Assets\UserInput\HEroInputAction.cs" />
   </ItemGroup>
   <ItemGroup>

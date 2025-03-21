@@ -96,27 +96,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _frameRate: 10
-  _loop: 0
-  _sprites:
-  - {fileID: 21300000, guid: 7433f34e96456044db7803a31e4afb48, type: 3}
-  - {fileID: 21300000, guid: 1311f2ff34f33ed4aa25c2e823ff3326, type: 3}
-  - {fileID: 21300000, guid: 9c4eeaedf6383bd498c59e8cf84bb520, type: 3}
-  - {fileID: 21300000, guid: a01cf956aef4e88439a5c4a29adddfbc, type: 3}
-  - {fileID: 21300000, guid: 1130ef719d9c0d54da94f6aeb1cc0655, type: 3}
-  _onComplete:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2136025636284646710}
-        m_MethodName: DestroyObj
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  _clips:
+  - _name: idle
+    _sprites:
+    - {fileID: 21300000, guid: 7433f34e96456044db7803a31e4afb48, type: 3}
+    - {fileID: 21300000, guid: 1311f2ff34f33ed4aa25c2e823ff3326, type: 3}
+    - {fileID: 21300000, guid: 9c4eeaedf6383bd498c59e8cf84bb520, type: 3}
+    - {fileID: 21300000, guid: a01cf956aef4e88439a5c4a29adddfbc, type: 3}
+    - {fileID: 21300000, guid: 1130ef719d9c0d54da94f6aeb1cc0655, type: 3}
+    _loop: 0
+    _allowNextClip: 0
+    _onComplete:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2136025636284646710}
+          m_MethodName: DestroyObj
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &2136025636284646710
 MonoBehaviour:
   m_ObjectHideFlags: 0

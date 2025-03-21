@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2607517560142949671}
   - component: {fileID: 2607517560142949668}
   - component: {fileID: 2607517560142949691}
-  - component: {fileID: 2607517560142949690}
+  - component: {fileID: -3657663814113605801}
   m_Layer: 0
   m_Name: Coins_0
   m_TagString: Untagged
@@ -119,15 +119,15 @@ MonoBehaviour:
   _action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2607517560142949668}
-        m_MethodName: DestroyObj
-        m_Mode: 1
+      - m_Target: {fileID: -3657663814113605801}
+        m_MethodName: SetClip
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: destroy
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2607517560142949691}
@@ -166,9 +166,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c936df8c01771e4ab35548d6af7e817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hero: {fileID: 0}
+  _tag: Player
   _value: 1
---- !u!114 &2607517560142949690
+--- !u!114 &-3657663814113605801
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -181,12 +181,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _frameRate: 10
-  _loop: 1
-  _sprites:
-  - {fileID: -2322180950842035098, guid: f4a21d1311ddc6446ae02912ecc46fbd, type: 3}
-  - {fileID: -4893972260818282012, guid: f4a21d1311ddc6446ae02912ecc46fbd, type: 3}
-  - {fileID: -6323751108524238166, guid: f4a21d1311ddc6446ae02912ecc46fbd, type: 3}
-  - {fileID: 2722280177590742205, guid: f4a21d1311ddc6446ae02912ecc46fbd, type: 3}
-  _onComplete:
-    m_PersistentCalls:
-      m_Calls: []
+  _clips:
+  - _name: idle
+    _sprites:
+    - {fileID: -2322180950842035098, guid: f4a21d1311ddc6446ae02912ecc46fbd, type: 3}
+    - {fileID: -4893972260818282012, guid: f4a21d1311ddc6446ae02912ecc46fbd, type: 3}
+    - {fileID: -6323751108524238166, guid: f4a21d1311ddc6446ae02912ecc46fbd, type: 3}
+    - {fileID: 2722280177590742205, guid: f4a21d1311ddc6446ae02912ecc46fbd, type: 3}
+    _loop: 1
+    _allowNextClip: 0
+    _onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+  - _name: destroy
+    _sprites:
+    - {fileID: -4986890610287934012, guid: f4a21d1311ddc6446ae02912ecc46fbd, type: 3}
+    - {fileID: 6143208460787649835, guid: f4a21d1311ddc6446ae02912ecc46fbd, type: 3}
+    - {fileID: 7609282858266732271, guid: f4a21d1311ddc6446ae02912ecc46fbd, type: 3}
+    - {fileID: -6288512792030432889, guid: f4a21d1311ddc6446ae02912ecc46fbd, type: 3}
+    _loop: 0
+    _allowNextClip: 0
+    _onComplete:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2607517560142949668}
+          m_MethodName: DestroyObj
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

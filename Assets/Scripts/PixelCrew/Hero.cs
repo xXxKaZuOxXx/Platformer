@@ -1,6 +1,11 @@
-﻿using PixelCrew.Components;
+﻿using PixelCrew;
+using PixelCrew.Components;
+using PixelCrew.Utils;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class Hero : MonoBehaviour
@@ -12,6 +17,7 @@ public class Hero : MonoBehaviour
     private bool _isGrounded;
     private bool _allowDoubleJump;
     private bool _isJumping;
+    private bool _isArmed;
 
     private Collider2D[] _interactionResult = new Collider2D[1];
 
@@ -21,6 +27,8 @@ public class Hero : MonoBehaviour
     [SerializeField] private float _interactionRadius;
     [SerializeField] private LayerMask _interactionLayer;
     [SerializeField] private LayerCheck _groundCheck;
+
+    [SerializeField] private Spawn _attackParticles;
     [SerializeField] private Spawn _footParticles;
     [SerializeField] private Spawn _jumpParticles;
     [SerializeField] private Spawn _fallParticles;
@@ -29,17 +37,19 @@ public class Hero : MonoBehaviour
     [SerializeField] private float _groundCheckRadius;
     [SerializeField] private Vector3 _groundCheckPositionDelta;
     [SerializeField] private LayerMask _groundLayer;
-
+    [SerializeField] private CheckCircleOverlap _attackRange;
+    [SerializeField] private int _damage;
 
     public int Score { get; set; } = 0;
+
+    [SerializeField] private AnimatorController _armed;
+    [SerializeField] private AnimatorController _unarmed;
 
     private static readonly int IsGround = Animator.StringToHash("Isground");
     private static readonly int Verticalvelocity = Animator.StringToHash("Verticalvelocity");
     private static readonly int Isrunning = Animator.StringToHash("Isrunning");
     private static readonly int Hit = Animator.StringToHash("hit");
-
-
-    
+    private static readonly int attack = Animator.StringToHash("attack");
 
     private void Awake()
     {
@@ -180,15 +190,20 @@ public class Hero : MonoBehaviour
             }
         }
     }
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
-        Gizmos.color = CheckWhenGroundedByCircleCast() ? Color.green : Color.red;
-      
-        Gizmos.DrawSphere(transform.position + _groundCheckPositionDelta, _groundCheckRadius);
+        Handles.color = CheckWhenGroundedByCircleCast() ? HandlesUtils.TransparentGreen : HandlesUtils.TransparentRed;
+        Handles.DrawSolidDisc(transform.position + _groundCheckPositionDelta, Vector3.forward, _groundCheckRadius);
     }
+#endif 
     public void SpawnFootDust()
     {
         _footParticles.SpawnTarget();
+    }
+    public void SpawnAttack1Dust()
+    {
+        _attackParticles.SpawnTarget();
     }
     public void SpawnJumpDust()
     {
@@ -201,7 +216,33 @@ public class Hero : MonoBehaviour
             _fallParticles.SpawnTarget();
         }
     }
-    
+
+    public void Attack()
+    {
+        if(!_isArmed) return;
+
+        _animator.SetTrigger(attack);
+        SpawnAttack1Dust();
 
 
+    }
+
+    private void OnAttack()
+    {
+        var gos = _attackRange.GetObjectsInRange();
+        foreach (var item in gos)
+        {
+            var hp = item.GetComponent<Health>();
+            if (hp != null && item.CompareTag("Enemy") && hp > 0)
+            {
+                hp.ApplyDamage(_damage);
+            }
+        }
+    }
+
+    internal void ArmedHero()
+    {
+        _isArmed = true;
+        _animator.runtimeAnimatorController = _armed;
+    }
 }
