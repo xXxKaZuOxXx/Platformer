@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using PixelCrew.Model;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
@@ -23,7 +24,7 @@ public class GetScore : MonoBehaviour
     private void Score()
     {
 
-        _hero.Score += _value;
+       // _hero.Score += _value;
     }
     public void LogScore()
     {

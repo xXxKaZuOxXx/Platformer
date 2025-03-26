@@ -1,5 +1,6 @@
 ﻿using PixelCrew;
 using PixelCrew.Components;
+using PixelCrew.Model;
 using PixelCrew.Utils;
 using System;
 using System.Collections;
@@ -17,7 +18,7 @@ public class Hero : MonoBehaviour
     private bool _isGrounded;
     private bool _allowDoubleJump;
     private bool _isJumping;
-    private bool _isArmed;
+    //private bool _isArmed;
 
     private Collider2D[] _interactionResult = new Collider2D[1];
 
@@ -40,7 +41,20 @@ public class Hero : MonoBehaviour
     [SerializeField] private CheckCircleOverlap _attackRange;
     [SerializeField] private int _damage;
 
-    public int Score { get; set; } = 0;
+    public int Score
+    {
+        get
+        {
+            return _session.Data.Coins;
+        }
+        set
+        {
+            _session.Data.Coins = value;
+        }
+    }
+   
+
+    private GameSession _session;
 
     [SerializeField] private AnimatorController _armed;
     [SerializeField] private AnimatorController _unarmed;
@@ -57,9 +71,21 @@ public class Hero : MonoBehaviour
         _animator = GetComponent<Animator>();
       
     }
+    private void Start()
+    {
+        _session = FindObjectOfType<GameSession>();
+        var health = GetComponent<Health>();
+        health.SetHealth(_session.Data.Hp);
+        UpdateHeroWeapon();
+
+    }
     public void SetDirection(Vector2 direction)
     {
         _direction = direction;
+    }
+    public void OnHealthChanged(int currentHealth)
+    {
+        _session.Data.Hp = currentHealth;
     }
     private void Update()
     {
@@ -159,7 +185,7 @@ public class Hero : MonoBehaviour
         _animator.SetTrigger(Hit);
         _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _damageJumpSpeed);
 
-        if (Score > 0)
+        if (_session.Data.Coins > 0)
         {
             SpawnCoins();
         }
@@ -168,8 +194,8 @@ public class Hero : MonoBehaviour
     }
     private void SpawnCoins()
     {
-        var numCoinsToDispose = Mathf.Min(Score, 5);
-        Score -= numCoinsToDispose;
+        var numCoinsToDispose = Mathf.Min(_session.Data.Coins, 5);
+        _session.Data.Coins -= numCoinsToDispose;
 
         var burst = _hitParticles.emission.GetBurst(0);
         burst.count = numCoinsToDispose;
@@ -219,7 +245,7 @@ public class Hero : MonoBehaviour
 
     public void Attack()
     {
-        if(!_isArmed) return;
+        if(!_session.Data.IsArmed) return;
 
         _animator.SetTrigger(attack);
         SpawnAttack1Dust();
@@ -242,7 +268,19 @@ public class Hero : MonoBehaviour
 
     internal void ArmedHero()
     {
-        _isArmed = true;
-        _animator.runtimeAnimatorController = _armed;
+        _session.Data.IsArmed = true;
+        UpdateHeroWeapon();
+        //_animator.runtimeAnimatorController = _armed;
+    }
+    private void UpdateHeroWeapon()
+    {
+        if(_session.Data.IsArmed)
+        {
+            _animator.runtimeAnimatorController = _armed;
+        }
+        else
+        {
+            _animator.runtimeAnimatorController = _unarmed;
+        }
     }
 }

@@ -16,8 +16,7 @@ GameObject:
   - component: {fileID: 1698277349205087794}
   - component: {fileID: 1698277349205087795}
   - component: {fileID: 1698277349205087790}
-  - component: {fileID: -4619196188273979497}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: destructableBarrel
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -290,22 +289,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 1698277349205087796}
   _prefab: {fileID: 3843837808965980492, guid: 7298a8947862b1649b88a8f6636fc6e3, type: 3}
---- !u!114 &-4619196188273979497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698277349205087798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: becd2dbfbe18e434fad2c7dfa30c9403, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _quantity: 5
-  _percentageOfGold: 50
-  _silverCoin: {fileID: 6473337709662732521, guid: 8534a90cf151e8b49936bf2178b83b24,
-    type: 3}
-  _goldCoin: {fileID: 2314074081755499123, guid: 02060af7f826fbf44a988f198583e51d,
-    type: 3}
-  _velocity: 1

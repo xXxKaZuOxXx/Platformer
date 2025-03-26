@@ -209,6 +209,7 @@ MonoBehaviour:
   _goldCoinPrefab: {fileID: 3712071053388754410, guid: d9348c4d006b5db4ea9d41195c258dbd,
     type: 3}
   _switchPrefab: {fileID: 7131181795535036958}
+  _timeBeforeFreezing: 1
 --- !u!114 &-2031753209367525112
 MonoBehaviour:
   m_ObjectHideFlags: 0

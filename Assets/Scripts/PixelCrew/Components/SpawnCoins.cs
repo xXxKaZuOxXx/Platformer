@@ -14,7 +14,8 @@ namespace PixelCrew.Components
         [SerializeField] private Transform _target;
         [SerializeField] private GameObject _silverCoinPrefab;
         [SerializeField] private GameObject _goldCoinPrefab;
-        [SerializeField]private SwitchPrefab _switchPrefab;
+        [SerializeField] private SwitchPrefab _switchPrefab;
+        [SerializeField] private int _timeBeforeFreezing = 1;
 
         [ContextMenu("Spawn")]
         public void Start()
@@ -58,8 +59,8 @@ namespace PixelCrew.Components
             var silverCoinsArray = silverCoins.ToArray();
             _switchPrefab = GetComponent<SwitchPrefab>();
 
-            yield return new WaitForSeconds(1);
-              int a = 5;
+            yield return new WaitForSeconds(_timeBeforeFreezing);
+              
             if (goldCoinsArray.Length > 0)
                 _switchPrefab.SwapAllByArray(_goldCoinPrefab, goldCoinsArray);
             if( silverCoinsArray.Length > 0)

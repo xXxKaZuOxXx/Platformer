@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\Components\DestroyObject.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\EnterCollision.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\EnterTrigger.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\ExitLevel.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\GetScore.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Health.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Interactive.cs" />
@@ -79,6 +80,8 @@
     <Compile Include="Assets\Scripts\PixelCrew\Hero.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\HeroInputReader.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\LayerCheck.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\GameSession.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\SpriteAnimation.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\HandlesUtils.cs" />
     <Compile Include="Assets\UserInput\HEroInputAction.cs" />
