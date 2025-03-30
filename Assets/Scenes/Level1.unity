@@ -12482,6 +12482,18 @@ PrefabInstance:
       objectReference: {fileID: 1208413382}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9348c4d006b5db4ea9d41195c258dbd, type: 3}
+--- !u!114 &1257282036 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7555306642372626906, guid: 7e278eac9552ffa4e9ab70bb488e2a67,
+    type: 3}
+  m_PrefabInstance: {fileID: 592649087839961277}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d5a8a1b2d9e07438163d42b410d931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1279680187
 GameObject:
   m_ObjectHideFlags: 0
@@ -14564,11 +14576,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 592649089048374385, guid: 7e278eac9552ffa4e9ab70bb488e2a67,
         type: 3}
-      propertyPath: _health
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 592649089048374385, guid: 7e278eac9552ffa4e9ab70bb488e2a67,
-        type: 3}
       propertyPath: _onDie.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 24353571}
@@ -14627,10 +14634,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 592649089048374395, guid: 7e278eac9552ffa4e9ab70bb488e2a67,
+        type: 3}
+      propertyPath: _interactionCheck
+      value: 
+      objectReference: {fileID: 1257282036}
     - target: {fileID: 592649089048374398, guid: 7e278eac9552ffa4e9ab70bb488e2a67,
         type: 3}
       propertyPath: m_Name
       value: Hero_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555306642372626906, guid: 7e278eac9552ffa4e9ab70bb488e2a67,
+        type: 3}
+      propertyPath: _mask.m_Bits
+      value: 512
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e278eac9552ffa4e9ab70bb488e2a67, type: 3}

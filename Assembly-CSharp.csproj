@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\Components\Damage.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Data_of_Score.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\DestroyObject.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\DoInteraction.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\EnterCollision.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\EnterTrigger.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\ExitLevel.cs" />
@@ -73,16 +74,23 @@
     <Compile Include="Assets\Scripts\PixelCrew\Components\ReloadLevel.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Spawn.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\SpawnCoins.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\SpawnListComponent.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Switch.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\SwitchPrefab.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Teleport.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Creature.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Hero.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\MobAI.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Patrol.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\PlatformPatrol.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\PointPatrol.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\FollowTarget.cs" />
-    <Compile Include="Assets\Scripts\PixelCrew\Hero.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\HeroInputReader.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\LayerCheck.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\GameSession.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\SpriteAnimation.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Utils\GameObjectExtension.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\HandlesUtils.cs" />
     <Compile Include="Assets\UserInput\HEroInputAction.cs" />
   </ItemGroup>

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Platform
   - Enemy
+  - Interacteble
   layers:
   - Default
   - TransparentFX
@@ -19,8 +20,8 @@ TagManager:
   - Interactebles
   - Trash
   - flyingCoin
-  - 
-  - 
+  - Enemy
+  - Hero
   - 
   - 
   - 
