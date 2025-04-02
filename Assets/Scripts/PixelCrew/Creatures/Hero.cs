@@ -18,12 +18,12 @@ public class Hero : Creature
     [SerializeField] private CheckCircleOverlap _interactionCheck;
     [SerializeField] private float _slamDownVelocity;
 
-    [SerializeField] private ParticleSystem _hitParticles;
-
+    [SerializeField] private Cooldown _throwCooldown;
     [SerializeField] private AnimatorController _armed;
     [SerializeField] private AnimatorController _unarmed;
 
-   
+    private static readonly int ThrowKey = Animator.StringToHash("throw");
+    [SerializeField] private ParticleSystem _hitParticles;
 
     private GameSession _session;
 
@@ -38,6 +38,17 @@ public class Hero : Creature
         set
         {
             _session.Data.Coins = value;
+        }
+    }
+    public int NumberOfSwords
+    {
+        get
+        {
+            return _session.Data.Swords;
+        }
+        set
+        {
+            _session.Data.Swords = value;
         }
     }
 
@@ -155,5 +166,40 @@ public class Hero : Creature
         {
             Animator.runtimeAnimatorController = _unarmed;
         }
+    }
+    public void OnDoThrow()
+    {
+        Particles.Spawn("Throw");
+    }
+    internal void Throw(bool triple)
+    {
+        if(_throwCooldown.IsReady && _session.Data.Swords > 1 && !triple)
+        {
+            Animator.SetTrigger(ThrowKey);
+            _throwCooldown.Reset();
+            _session.Data.Swords -= 1;
+        }
+        else if(_session.Data.Swords > 3 && triple)
+        {
+            
+            StartCoroutine(ThreeThrows());
+            
+                //Animator.SetTrigger(ThrowKey);
+                //_session.Data.Swords -= 1;
+            
+            _throwCooldown.Reset();
+
+        }
+        
+    }
+    private IEnumerator ThreeThrows()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            Animator.SetTrigger(ThrowKey);
+            _session.Data.Swords -= 1;
+            yield return new WaitForSeconds(0.2f);
+        }
+        yield break;
     }
 }

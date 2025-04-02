@@ -84,12 +84,14 @@
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Patrol.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\PlatformPatrol.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\PointPatrol.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\Projectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\HeroInputReader.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\LayerCheck.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\GameSession.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\SpriteAnimation.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Utils\Cooldown.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\GameObjectExtension.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\HandlesUtils.cs" />
     <Compile Include="Assets\UserInput\HEroInputAction.cs" />

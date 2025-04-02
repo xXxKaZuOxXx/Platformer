@@ -109,6 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 592649087786985551}
   _prefab: {fileID: 1477218382098562851, guid: 8e692ed336b1476439aa5beaa9787acc, type: 3}
+  _invertXScale: 0
 --- !u!1 &592649088082894703
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,6 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 592649088110358402}
   _prefab: {fileID: 6127582911982982285, guid: 9ad6ade86537a71468e4d76e47c678d6, type: 3}
+  _invertXScale: 0
 --- !u!1 &592649088654830507
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,6 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 592649088654830506}
   _prefab: {fileID: 1722215457920806636, guid: dddd9eba311be0344abe99d098c62816, type: 3}
+  _invertXScale: 1
 --- !u!1 &592649089048374398
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,7 +559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invertScale: 1
-  _speed: 4
+  _speed: 2
   JumpSpeed: 20
   _damageVelocity: 5
   GroundLayer:
@@ -597,7 +600,7 @@ MonoBehaviour:
   _points:
   - {fileID: 0}
   - {fileID: 0}
-  _treshold: 1
+  _treshold: 0.5
 --- !u!1 &4809444888682803250
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,7 +647,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.16030884, y: 0}
+  m_Offset: {x: -1.066884, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -655,7 +658,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.7272873, y: 2.02}
+  m_Size: {x: 5.914137, y: 2.02}
   m_EdgeRadius: 0
 --- !u!114 &8543903877277848932
 MonoBehaviour:
@@ -686,6 +689,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tag: Player
+  _layer:
+    serializedVersion: 2
+    m_Bits: 4294967295
   _action:
     m_PersistentCalls:
       m_Calls:
@@ -745,6 +751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 7281378065208914910}
   _prefab: {fileID: 1722215457920806636, guid: 7b8687ef49897094ea4750e185a7753f, type: 3}
+  _invertXScale: 0
 --- !u!1 &7831540100139605285
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,3 +797,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 5329417227501315075}
   _prefab: {fileID: 6127582911982982285, guid: bb958df49dbde9d47b182e5fd14f0781, type: 3}
+  _invertXScale: 0

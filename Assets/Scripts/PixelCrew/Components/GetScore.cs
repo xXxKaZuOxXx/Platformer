@@ -6,30 +6,28 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class GetScore : MonoBehaviour
 {
-    private Hero _hero;
+    
     [SerializeField] private string _tag;
     [SerializeField] private int _value;
+    private Hero _hero;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Hero>().Score += _value;
-            
-            Debug.Log(collision.gameObject.GetComponent<Hero>().Score);
-            LogScore();
+            _hero = collision.gameObject.GetComponent<Hero>();
         }
     }
-    
-    private void Score()
-    {
 
-       // _hero.Score += _value;
-    }
-    public void LogScore()
+    public void Score()
     {
-        
-        
+        _hero.Score += _value;
+        Debug.Log(_hero.Score);
     }
+    public void GetSword()
+    {
+        _hero.NumberOfSwords += _value;
+    }
+    
    
 }

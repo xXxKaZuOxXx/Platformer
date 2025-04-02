@@ -24,7 +24,7 @@ namespace PixelCrew.Creatures
         }
         public override IEnumerator DoPatrol()
         {
-            _creature.SetDirection(Vector2.right);
+            _creature.SetDirection(Vector2.right.normalized);
             while (enabled)
             {
                 //Vector2 playerSize = _player.bounds.size;
@@ -61,12 +61,12 @@ namespace PixelCrew.Creatures
                 if (leftRaycast && !rightRaycast)
                 {
                     var dir = Vector2.left;
-                    _creature.SetDirection(dir);
+                    _creature.SetDirection(dir.normalized);
                 }
                 else if (!leftRaycast && rightRaycast)
                 {
                     var dir = Vector2.right;
-                    _creature.SetDirection(dir);
+                    _creature.SetDirection(dir.normalized);
                 }
 
                 Debug.DrawRay(LeftRay, Vector2.down, Color.white);

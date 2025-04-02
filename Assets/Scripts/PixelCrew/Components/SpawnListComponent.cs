@@ -9,6 +9,8 @@ namespace PixelCrew.Components
     {
         [SerializeField] private SpawnData[] _spawners;
 
+      
+
         public void Spawn(string id)
         {
             var spawner =_spawners.FirstOrDefault(element => element.Id == id);

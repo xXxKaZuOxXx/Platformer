@@ -48,10 +48,18 @@ namespace PixelCrew.Creatures
 
         private IEnumerator AgroToHero()
         {
+            LookAtHero();
             _particles.Spawn("Exclamation");
             yield return new WaitForSeconds(_alarmDelay);
             StartState(GoToHero());           
         }
+
+        private void LookAtHero()
+        {
+            var direction = GetDirectionToTarget();
+            _creature.UpdateSpriteDirection(direction);
+        }
+
         private IEnumerator GoToHero()
         {
             while (_vision.IsTouchingLayer)
@@ -67,8 +75,11 @@ namespace PixelCrew.Creatures
                 
                 yield return null;
             }
+            _creature.SetDirection(Vector2.zero);
             _particles.Spawn("Miss");
             yield return new WaitForSeconds(_missCooldown);
+
+            StartState(_patrol.DoPatrol());
 
         }
 
@@ -88,6 +99,12 @@ namespace PixelCrew.Creatures
             direction.y = 0;
             _creature.SetDirection(direction.normalized);
         }
+        private Vector2 GetDirectionToTarget()
+        {
+            var direction = _target.transform.position - transform.position;
+            direction.y = 0;
+            return direction.normalized;
+        }
 
      
         private void StartState(IEnumerator coroutine)
@@ -102,8 +119,11 @@ namespace PixelCrew.Creatures
 
         public void OnDie()
         {
+            
             _isDead = true;
             _animator.SetBool(IsDeadKey, true);
+
+            _creature.SetDirection(Vector2.zero);
             if (_current != null)
             {
                 StopCoroutine(_current);
