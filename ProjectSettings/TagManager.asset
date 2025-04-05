@@ -22,8 +22,8 @@ TagManager:
   - flyingCoin
   - Enemy
   - Hero
-  - 
-  - 
+  - Walls
+  - Checkers
   - 
   - 
   - 
@@ -43,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 
+    uniqueID: 2253277535
+    locked: 0
+  - name: 
+    uniqueID: 2518064133
     locked: 0
