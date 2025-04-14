@@ -22,12 +22,7 @@ public class CoinsScriptEditor : Editor
         }
         
     }
-    private void OnValidate()
-    {
-        
-
-
-    }
+   
     private void OnSceneGUI()
     {
         Handles.DrawWireArc(_circleMovement.transform.position, Vector3.forward, Vector3.up, 360f, _circleMovement.Radius);

@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 2607517560142949689}
   - component: {fileID: 2607517560142949670}
   - component: {fileID: 2607517560142949668}
-  - component: {fileID: 2607517560142949691}
   - component: {fileID: 2607517560142949671}
   - component: {fileID: -3657663814113605801}
   - component: {fileID: 237924500648222630}
   - component: {fileID: -1116848346703936459}
+  - component: {fileID: 8310624592119217966}
   m_Layer: 11
   m_Name: Coins_0
   m_TagString: Untagged
@@ -118,20 +118,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _objToDestroy: {fileID: 2607517560142949669}
---- !u!114 &2607517560142949691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2607517560142949669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c936df8c01771e4ab35548d6af7e817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _tag: Player
-  _value: 1
 --- !u!114 &2607517560142949671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,9 +148,9 @@ MonoBehaviour:
           m_StringArgument: destroy
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2607517560142949691}
-        m_MethodName: Score
-        m_Mode: 1
+      - m_Target: {fileID: 8310624592119217966}
+        m_MethodName: Add
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -234,6 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _frquency: 4
   _amplitude: 0.2
+  _randomize: 0
 --- !u!50 &-1116848346703936459
 Rigidbody2D:
   serializedVersion: 4
@@ -255,3 +242,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8310624592119217966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2607517560142949669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4423c59a6d2d14581b3a81e2c4d0cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: Coin
+  _count: 1

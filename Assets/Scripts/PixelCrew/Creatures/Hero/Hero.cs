@@ -33,45 +33,42 @@ public class Hero : Creature
     private bool _allowDoubleJump;
     private bool _isOnWall;
     
-   
-    public int Score
+    public void AddInInventory(string id, int value)
     {
-        get
-        {
-            return _session.Data.Coins;
-        }
-        set
-        {
-            _session.Data.Coins = value;
-        }
+        _session.Data.Inventory.Add(id, value);
     }
-    public int NumberOfSwords
-    {
-        get
-        {
-            return _session.Data.Swords;
-        }
-        set
-        {
-            _session.Data.Swords = value;
-        }
-    }
+    private int CoinsCount => _session.Data.Inventory.Count("Coin");
+    private int SwordCount => _session.Data.Inventory.Count("Sword");
+
+    
 
     protected override void Awake()
     {
         base.Awake();
         _defaultGravityScale = Rigidbody.gravityScale;
     }
-   
+    private void OnDestroy()
+    {
+        _session.Data.Inventory.OnChanged -= OnInventoryChanged;
+    }
+
     private void Start()
     {
+       
         _session = FindObjectOfType<GameSession>();
         var health = GetComponent<Health>();
+        _session.Data.Inventory.OnChanged += OnInventoryChanged;
         health.SetHealth(_session.Data.Hp);
         UpdateHeroWeapon();
 
     }
-    
+    private void OnInventoryChanged(string id, int value)
+    {
+        if (id == "Sword")
+            UpdateHeroWeapon();
+    }
+
+
     public void OnHealthChanged(int currentHealth)
     {
         _session.Data.Hp = currentHealth;
@@ -128,19 +125,21 @@ public class Hero : Creature
     {
         Debug.Log("Some");
     }
+    
     public override void TakeDamage()
     {
         base.TakeDamage();
-        if (_session.Data.Coins > 0)
+       
+        if (CoinsCount > 0)
         {
             SpawnCoins();
         }
     }
     private void SpawnCoins()
     {
-        var numCoinsToDispose = Mathf.Min(_session.Data.Coins, 5);
-        _session.Data.Coins -= numCoinsToDispose;
-
+        var numCoinsToDispose = Mathf.Min(CoinsCount, 5);
+        _session.Data.Inventory.Remove("Coin", numCoinsToDispose);
+       
         var burst = _hitParticles.emission.GetBurst(0);
         burst.count = numCoinsToDispose;
         _hitParticles.emission.SetBurst(0, burst);
@@ -166,24 +165,28 @@ public class Hero : Creature
 
     public override void Attack()
     {
-        if(!_session.Data.IsArmed) return;
+        
+        if (SwordCount <= 0) return;
 
         base.Attack();
 
-
     }
 
-   
-
-    internal void ArmedHero()
+    public void DoHeal()
     {
-        _session.Data.IsArmed = true;
-        UpdateHeroWeapon();
-        //_animator.runtimeAnimatorController = _armed;
+       var poitions = _session.Data.Inventory.Count("Heal");
+        if (poitions > 0)
+        {
+            var health = GetComponent<Health>();
+            health.ApplyDamage(-5);
+        }
+        _session.Data.Inventory.Remove("Heal", 1);
     }
+  
     private void UpdateHeroWeapon()
     {
-        if(_session.Data.IsArmed)
+        
+        if (SwordCount > 0)
         {
             Animator.runtimeAnimatorController = _armed;
         }
@@ -198,13 +201,13 @@ public class Hero : Creature
     }
     internal void Throw(bool triple)
     {
-        if(_throwCooldown.IsReady && _session.Data.Swords > 1 && !triple)
+        if(_throwCooldown.IsReady && SwordCount > 1 && !triple)
         {
             Animator.SetTrigger(ThrowKey);
             _throwCooldown.Reset();
-            _session.Data.Swords -= 1;
+            _session.Data.Inventory.Remove("Sword", 1);
         }
-        else if(_session.Data.Swords > 3 && triple)
+        else if(SwordCount > 3 && triple)
         {
             
             StartCoroutine(ThreeThrows());
@@ -222,7 +225,7 @@ public class Hero : Creature
         for (int i = 0; i < 3; i++)
         {
             Animator.SetTrigger(ThrowKey);
-            _session.Data.Swords -= 1;
+            _session.Data.Inventory.Remove("Sword", 1);
             yield return new WaitForSeconds(0.2f);
         }
         yield break;

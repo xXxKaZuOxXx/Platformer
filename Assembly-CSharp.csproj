@@ -56,9 +56,8 @@
     <Analyzer Include="E:\VISUAL STUDIO\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PixelCrew\Components\Collectables\ArmHero.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Collectables\CircleMovement.cs" />
-    <Compile Include="Assets\Scripts\PixelCrew\Components\Collectables\GetScore.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\Collectables\InventoryAdd.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\ColliderBased\CheckCircleOverlap.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\ColliderBased\EnterCollision.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\ColliderBased\EnterTrigger.cs" />
@@ -72,6 +71,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\Components\Health\Health.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Interactions\DoInteraction.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Interactions\Interactive.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\Interactions\RequireItem.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Interactions\Switch.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\LevelManegement\ExitLevel.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\LevelManegement\ReloadLevel.cs" />
@@ -92,8 +92,12 @@
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\Projectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\SinusoidalProjectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\FollowTarget.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Data\InventoryData.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Data\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\DefsFacade.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\InventoryIdAttribute.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\InventoryItemsDefinitions.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\GameSession.cs" />
-    <Compile Include="Assets\Scripts\PixelCrew\Model\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\SpriteAnimation.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\CheatController.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\Cooldown.cs" />
