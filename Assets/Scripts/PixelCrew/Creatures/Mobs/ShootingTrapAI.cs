@@ -22,10 +22,12 @@ public class ShootingTrapAI : MonoBehaviour
     private static readonly int Range = Animator.StringToHash("Range");
 
     private Animator _animator;
+    private PlaySounds _sounds;
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+        _sounds = GetComponent<PlaySounds>();
     }
     private void Update()
     {
@@ -50,17 +52,20 @@ public class ShootingTrapAI : MonoBehaviour
     {
         _rangeCooldown.Reset();
         _animator.SetTrigger(Range);
+
     }
 
     public void OnRangeAttack()
     {
-
+        _sounds.Play("Range");
         _rangeAttack.SpawnTarget();
     }
     private void MeleeAttack()
     {
         _meleeCooldown.Reset();
+        _sounds.Play("Melee");
         _animator.SetTrigger(Melee);
+        
     }
     public void OnMeleeAttack()
     {

@@ -14,6 +14,7 @@ public class TotemsAI : MonoBehaviour
     [SerializeField] private Cooldown _timeBeforeAttack;
 
     private Animator _animator;
+    private PlaySounds _sounds;
     private Health _health;
     private float _currentHealth;
     private bool _canAttack = false;
@@ -26,6 +27,7 @@ public class TotemsAI : MonoBehaviour
         _health = GetComponent<Health>();
         _currentHealth = _health.HealthValue;
         _animator = GetComponent<Animator>();
+        _sounds = GetComponent<PlaySounds>();
     }
     private void Update()
     {
@@ -54,6 +56,7 @@ public class TotemsAI : MonoBehaviour
     private void RangeAttack()
     {
         _rangeCooldown.Reset();
+        _sounds.Play("Range");
         _animator.SetTrigger(Range);
     }
 

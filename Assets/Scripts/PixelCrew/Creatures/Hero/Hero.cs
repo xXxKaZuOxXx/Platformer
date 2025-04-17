@@ -114,8 +114,9 @@ public class Hero : Creature
         if (!IsGrounded && _allowDoubleJump && !_isOnWall)
         {
 
-            Particles.Spawn("Jump");
+            
             _allowDoubleJump = false;
+            DoJumpVfx();
             return JumpSpeed;
         }
         return base.CalculateJumpVelocity(yVelocity);
@@ -197,6 +198,7 @@ public class Hero : Creature
     }
     public void OnDoThrow()
     {
+        Sounds.Play("Range");
         Particles.Spawn("Throw");
     }
     internal void Throw(bool triple)
