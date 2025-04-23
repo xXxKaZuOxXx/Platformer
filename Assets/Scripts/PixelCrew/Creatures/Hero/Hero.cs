@@ -10,7 +10,7 @@ using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
 
-public class Hero : Creature
+public class Hero : Creature, IcanAddInInventory
 {
    
 

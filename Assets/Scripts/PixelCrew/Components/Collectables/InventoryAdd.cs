@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using PixelCrew.Utils;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,10 +10,8 @@ public class InventoryAdd : MonoBehaviour
 
     public void Add(GameObject go)
     {
-        var hero = go.GetComponent<Hero>();
-        if (hero != null)
-        {
-            hero.AddInInventory(_id, _count);
-        }
+        var hero = go.GetInterface<IcanAddInInventory>();
+        hero?.AddInInventory(_id, _count);
+        
     }
 }

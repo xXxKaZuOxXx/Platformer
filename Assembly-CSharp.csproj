@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PixelCrew\Components\Audio\PlaySounds.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Collectables\CircleMovement.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\Collectables\Collector.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Collectables\InventoryAdd.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\ColliderBased\CheckCircleOverlap.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\ColliderBased\EnterCollision.cs" />
@@ -87,12 +88,14 @@
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Patrolling\Patrol.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Patrolling\PlatformPatrol.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Patrolling\PointPatrol.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\PinkAI.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\ShootingTrapAI.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\TotemsAI.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\BaseProjectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\Projectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\SinusoidalProjectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\FollowTarget.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Data\IcanAddInInventory.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Data\InventoryData.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Data\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\DefsFacade.cs" />

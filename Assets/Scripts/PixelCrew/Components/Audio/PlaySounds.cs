@@ -15,7 +15,7 @@ public class PlaySounds : MonoBehaviour
             if(item.Id != id) continue;
             
             _sourse.PlayOneShot(item.Clip);
-            Debug.Log(id);
+            
             break;
             
         }

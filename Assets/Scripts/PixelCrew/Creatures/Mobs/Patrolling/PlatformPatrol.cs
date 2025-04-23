@@ -27,25 +27,7 @@ namespace PixelCrew.Creatures
             _creature.SetDirection(Vector2.right.normalized);
             while (enabled)
             {
-                //Vector2 playerSize = _player.bounds.size;
-                //Vector2 playerCenter = _player.bounds.center;
-                //Vector2 bottomLeft = new Vector2(playerCenter.x - playerSize.x / 2, playerCenter.y - playerSize.y / 2);
-                //Vector2 bottomRight = new Vector2(playerCenter.x + playerSize.x / 2, playerSize.y + playerSize.y / 2);
-                //if (_platform.OverlapPoint(bottomRight) && !_platform.OverlapPoint(bottomLeft))
-                //{
-                //    var dir = Vector2.right;
-                //    _creature.SetDirection(dir);
-                //}
-                //else if (!_platform.OverlapPoint(bottomRight) && _platform.OverlapPoint(bottomLeft))
-                //{
-                //    var dir = Vector2.left;
-                //    _creature.SetDirection(dir);
-                //}
-                //else
-                //{
-                //    var dir = Vector2.right;
-                //    _creature.SetDirection(dir);
-                //}
+                
                 Vector2 platformSize = _platform.bounds.size;
                 Vector2 platformCenter = _platform.bounds.center;
                 Vector2 Left = new Vector2(platformCenter.x - platformSize.x / 2, platformCenter.y + platformSize.y / 2);
