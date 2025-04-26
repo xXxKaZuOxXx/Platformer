@@ -103,6 +103,10 @@
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\InventoryItemsDefinitions.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\GameSession.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\SpriteAnimation.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\AnimatedWindow.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\MainMenu\MainMenuWindow.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\Settings\SettingsWindow.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\Widgets\CustomButton.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\CheatController.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\Cooldown.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\GameObjectExtension.cs" />

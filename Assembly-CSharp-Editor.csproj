@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Editor\CoinsScriptEditor.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\Editor\InventoryIdAttributeDrawer.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\Widgets\Editor\CustomButtonEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
