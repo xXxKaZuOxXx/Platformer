@@ -20,7 +20,7 @@ public class InventoryData
         if(itemDef.IsVoid) return;
 
         var item = GetItem(id);
-        if(itemDef.IsSingle && _inventory.Count < 6)
+        if(itemDef.IsSingle && DefsFacade.I.PlayerDef.InventorySize <= _inventory.Count)
         {
             item = new InventoryItemData(id);
             item.Value = 1;

@@ -56,6 +56,7 @@
     <Analyzer Include="E:\VISUAL STUDIO\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\PixelCrew\Components\Audio\AudioSetting.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Audio\PlaySounds.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Collectables\CircleMovement.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Collectables\Collector.cs" />
@@ -95,18 +96,29 @@
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\Projectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\SinusoidalProjectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\FollowTarget.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Data\GameSettings.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Data\IcanAddInInventory.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Data\InventoryData.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Data\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Data\Properties\FloatPersistentProperty.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Data\Properties\IntProperty.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Data\Properties\ObservableProperty.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Data\Properties\PersistentProperty.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Data\Properties\PrefsPersistentProperty.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\DefsFacade.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\InventoryIdAttribute.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\InventoryItemsDefinitions.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\PlayerDef.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\GameSession.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\SpriteAnimation.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\AnimatedWindow.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\HUD\HUDController.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\MainMenu\MainMenuWindow.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Settings\SettingsWindow.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\Widgets\AudioSettingsWidget.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\Widgets\ButtonSound.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Widgets\CustomButton.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\Widgets\ProgressBar.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\CheatController.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\Cooldown.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\GameObjectExtension.cs" />

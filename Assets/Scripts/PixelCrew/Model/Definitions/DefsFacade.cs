@@ -7,8 +7,10 @@ using UnityEngine;
 public class DefsFacade : ScriptableObject
 {
     [SerializeField] private InventoryItemsDefinitions _items;
+    [SerializeField] private PlayerDef _playerDef;
 
     public InventoryItemsDefinitions Items => _items;
+    public PlayerDef PlayerDef => _playerDef;
 
     private static DefsFacade _instance;
     public static DefsFacade I => _instance == null? LoadDefs(): _instance;

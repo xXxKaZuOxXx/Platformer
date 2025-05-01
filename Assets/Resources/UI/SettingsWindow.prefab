@@ -851,6 +851,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3839cdbfab64e4ca36349e90c69f0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _music: {fileID: 6679061027093922066}
+  _sfx: {fileID: 8736061610886688780}
 --- !u!1 &3758096978371553850
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,6 +865,7 @@ GameObject:
   - component: {fileID: 2864072306998823841}
   - component: {fileID: 2840175852739432867}
   - component: {fileID: 4330471602884237083}
+  - component: {fileID: 7694815351498616736}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -985,6 +988,19 @@ MonoBehaviour:
         m_CallState: 2
   _normal: {fileID: 7704609267604971961}
   _select: {fileID: 896847075609905352}
+--- !u!114 &7694815351498616736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3758096978371553850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd4c8bf3aca6aa4583d5fb47f4c4288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: 449c2bbcb87038b4dbb7a8c778a2bf38, type: 3}
 --- !u!1 &4047539215853095299
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,8 +1010,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3658869993629014757}
+  - component: {fileID: 6679061027093922066}
   m_Layer: 5
-  m_Name: SoundSettings
+  m_Name: MusicSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1023,6 +1040,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 80.59024, y: 30.342789}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6679061027093922066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4047539215853095299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80339448b9aa465438b47121082a837a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slider: {fileID: 92337352}
+  _value: {fileID: 1821640138505214608}
 --- !u!1 &4466196198029870175
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,8 +1063,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3264610483121200965}
+  - component: {fileID: 8736061610886688780}
   m_Layer: 5
-  m_Name: SoundSettings (1)
+  m_Name: SfxSettings (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1061,6 +1093,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 83.04237, y: 28.675804}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8736061610886688780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4466196198029870175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80339448b9aa465438b47121082a837a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slider: {fileID: 3525911246937640099}
+  _value: {fileID: 9195389134409800167}
 --- !u!1 &4516773376448793314
 GameObject:
   m_ObjectHideFlags: 0

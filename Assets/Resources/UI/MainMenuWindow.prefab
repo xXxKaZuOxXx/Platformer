@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 5057135285563514863}
   - component: {fileID: 5057135285563514862}
   - component: {fileID: 5057135285563514861}
+  - component: {fileID: 6427064641502446340}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -212,6 +213,19 @@ MonoBehaviour:
         m_CallState: 2
   _normal: {fileID: 5057135285740560529}
   _select: {fileID: 5057135285836909146}
+--- !u!114 &6427064641502446340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5057135285563514859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd4c8bf3aca6aa4583d5fb47f4c4288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: 449c2bbcb87038b4dbb7a8c778a2bf38, type: 3}
 --- !u!1 &5057135285631009581
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +550,7 @@ GameObject:
   - component: {fileID: 5057135286246115571}
   - component: {fileID: 5057135286246115570}
   - component: {fileID: 5057135286246115569}
+  - component: {fileID: 684558409092169713}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -658,6 +673,19 @@ MonoBehaviour:
         m_CallState: 2
   _normal: {fileID: 5057135285849115213}
   _select: {fileID: 5057135285631009581}
+--- !u!114 &684558409092169713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5057135286246115583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd4c8bf3aca6aa4583d5fb47f4c4288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: 449c2bbcb87038b4dbb7a8c778a2bf38, type: 3}
 --- !u!1 &5057135286253750006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1076,7 @@ GameObject:
   - component: {fileID: 5057135287140970717}
   - component: {fileID: 5057135287140970716}
   - component: {fileID: 5057135287140970715}
+  - component: {fileID: 1983943458576916105}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -1170,3 +1199,16 @@ MonoBehaviour:
         m_CallState: 2
   _normal: {fileID: 5057135286253750006}
   _select: {fileID: 5057135285459924248}
+--- !u!114 &1983943458576916105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5057135287140970713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd4c8bf3aca6aa4583d5fb47f4c4288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: 449c2bbcb87038b4dbb7a8c778a2bf38, type: 3}
