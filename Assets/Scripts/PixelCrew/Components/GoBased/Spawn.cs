@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +19,11 @@ namespace PixelCrew.Components
             var scale  = _target.lossyScale;
             scale.x *= _invertXScale ? -1 : 1;
             instantiate.transform.localScale = scale;
+        }
+
+        internal void SetPrefab(GameObject prefab)
+        {
+            _prefab = prefab;
         }
     }
 

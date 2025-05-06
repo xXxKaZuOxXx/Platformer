@@ -11,7 +11,9 @@ namespace PixelCrew.Model
         [SerializeField] private PlayerData _data;
         public PlayerData Data => _data;
         private PlayerData _save;
+        public QuickInventoryModel QuickInventory { get; private set; }
 
+        private readonly CompositeDisposable _trash = new CompositeDisposable();
         public void Save()
         {
             _save = _data.Clone();
@@ -19,7 +21,11 @@ namespace PixelCrew.Model
 
         internal void LoadLastSave()
         {
-           _data = _save.Clone();
+            _data = _save.Clone();
+            _trash.Dispose();
+           
+           
+            InitModels();
         }
 
         private void Awake()
@@ -32,8 +38,16 @@ namespace PixelCrew.Model
             else
             {
                 Save();
+                InitModels();
                 DontDestroyOnLoad(this);
             }
+        }
+
+        private void InitModels()
+        {
+            QuickInventory = new QuickInventoryModel(Data);
+            _trash.Retain(QuickInventory);
+            
         }
 
         private void LoadHud()
@@ -52,6 +66,10 @@ namespace PixelCrew.Model
                 }
             }
             return false;
+        }
+        private void OnDestroy()
+        {
+            _trash.Dispose();
         }
     }
 }

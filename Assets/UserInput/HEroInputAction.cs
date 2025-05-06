@@ -73,9 +73,18 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Heal poition"",
+                    ""name"": ""NextItem"",
                     ""type"": ""Button"",
                     ""id"": ""239ccb87-c4e1-4d0a-938e-72d842313873"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""heal"",
+                    ""type"": ""Button"",
+                    ""id"": ""d669d7ff-c925-45dc-86a4-ffa9edc1d3ef"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -233,7 +242,18 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Heal poition"",
+                    ""action"": ""NextItem"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ca7703bc-68a6-4976-83b6-1367decf6a93"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""heal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -249,7 +269,8 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
         m_Hero_Interact = m_Hero.FindAction("Interact", throwIfNotFound: true);
         m_Hero_Attack = m_Hero.FindAction("Attack", throwIfNotFound: true);
         m_Hero_Throw = m_Hero.FindAction("Throw", throwIfNotFound: true);
-        m_Hero_Healpoition = m_Hero.FindAction("Heal poition", throwIfNotFound: true);
+        m_Hero_NextItem = m_Hero.FindAction("NextItem", throwIfNotFound: true);
+        m_Hero_heal = m_Hero.FindAction("heal", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -314,7 +335,8 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
     private readonly InputAction m_Hero_Interact;
     private readonly InputAction m_Hero_Attack;
     private readonly InputAction m_Hero_Throw;
-    private readonly InputAction m_Hero_Healpoition;
+    private readonly InputAction m_Hero_NextItem;
+    private readonly InputAction m_Hero_heal;
     public struct HeroActions
     {
         private @HEroInputAction m_Wrapper;
@@ -324,7 +346,8 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
         public InputAction @Interact => m_Wrapper.m_Hero_Interact;
         public InputAction @Attack => m_Wrapper.m_Hero_Attack;
         public InputAction @Throw => m_Wrapper.m_Hero_Throw;
-        public InputAction @Healpoition => m_Wrapper.m_Hero_Healpoition;
+        public InputAction @NextItem => m_Wrapper.m_Hero_NextItem;
+        public InputAction @heal => m_Wrapper.m_Hero_heal;
         public InputActionMap Get() { return m_Wrapper.m_Hero; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -349,9 +372,12 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
                 @Throw.started -= m_Wrapper.m_HeroActionsCallbackInterface.OnThrow;
                 @Throw.performed -= m_Wrapper.m_HeroActionsCallbackInterface.OnThrow;
                 @Throw.canceled -= m_Wrapper.m_HeroActionsCallbackInterface.OnThrow;
-                @Healpoition.started -= m_Wrapper.m_HeroActionsCallbackInterface.OnHealpoition;
-                @Healpoition.performed -= m_Wrapper.m_HeroActionsCallbackInterface.OnHealpoition;
-                @Healpoition.canceled -= m_Wrapper.m_HeroActionsCallbackInterface.OnHealpoition;
+                @NextItem.started -= m_Wrapper.m_HeroActionsCallbackInterface.OnNextItem;
+                @NextItem.performed -= m_Wrapper.m_HeroActionsCallbackInterface.OnNextItem;
+                @NextItem.canceled -= m_Wrapper.m_HeroActionsCallbackInterface.OnNextItem;
+                @heal.started -= m_Wrapper.m_HeroActionsCallbackInterface.OnHeal;
+                @heal.performed -= m_Wrapper.m_HeroActionsCallbackInterface.OnHeal;
+                @heal.canceled -= m_Wrapper.m_HeroActionsCallbackInterface.OnHeal;
             }
             m_Wrapper.m_HeroActionsCallbackInterface = instance;
             if (instance != null)
@@ -371,9 +397,12 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
                 @Throw.started += instance.OnThrow;
                 @Throw.performed += instance.OnThrow;
                 @Throw.canceled += instance.OnThrow;
-                @Healpoition.started += instance.OnHealpoition;
-                @Healpoition.performed += instance.OnHealpoition;
-                @Healpoition.canceled += instance.OnHealpoition;
+                @NextItem.started += instance.OnNextItem;
+                @NextItem.performed += instance.OnNextItem;
+                @NextItem.canceled += instance.OnNextItem;
+                @heal.started += instance.OnHeal;
+                @heal.performed += instance.OnHeal;
+                @heal.canceled += instance.OnHeal;
             }
         }
     }
@@ -385,6 +414,7 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
         void OnInteract(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
         void OnThrow(InputAction.CallbackContext context);
-        void OnHealpoition(InputAction.CallbackContext context);
+        void OnNextItem(InputAction.CallbackContext context);
+        void OnHeal(InputAction.CallbackContext context);
     }
 }

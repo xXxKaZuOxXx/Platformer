@@ -14,10 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _items:
   - _id: Coin
-    _isSingle: 0
+    _tags: 00000000
+    _icon: {fileID: -2322180950842035098, guid: f4a21d1311ddc6446ae02912ecc46fbd,
+      type: 3}
   - _id: Sword
-    _isSingle: 0
+    _tags: 000000000100000002000000
+    _icon: {fileID: 21300000, guid: 3c6c2e6e656038d41afdbada6ce3dce4, type: 3}
   - _id: Key
-    _isSingle: 0
+    _tags: 
+    _icon: {fileID: 21300000, guid: d5d706caa216f7e41b0d7feff216b317, type: 3}
   - _id: Heal
-    _isSingle: 1
+    _tags: 0100000003000000
+    _icon: {fileID: 21300000, guid: 3edb2ba971930cf40af99164bd0b4583, type: 3}
+  - _id: PearlProjectile
+    _tags: 010000000200000000000000
+    _icon: {fileID: 21300000, guid: 46f27ae000c00174a82b2229974a8853, type: 3}
+  - _id: BigHeal
+    _tags: 010000000300000000000000
+    _icon: {fileID: -8438763151253471919, guid: 13264906b0445a5499f8c0ee2ca6e042,
+      type: 3}

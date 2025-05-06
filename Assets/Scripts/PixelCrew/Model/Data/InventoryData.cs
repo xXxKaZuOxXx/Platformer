@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [Serializable]
@@ -20,7 +21,7 @@ public class InventoryData
         if(itemDef.IsVoid) return;
 
         var item = GetItem(id);
-        if(itemDef.IsSingle && DefsFacade.I.PlayerDef.InventorySize <= _inventory.Count)
+        if(!itemDef.HasTag(ItemTag.Stackable) && DefsFacade.I.PlayerDef.InventorySize <= _inventory.Count)
         {
             item = new InventoryItemData(id);
             item.Value = 1;
@@ -31,11 +32,25 @@ public class InventoryData
             item = new InventoryItemData(id);
             _inventory.Add(item);
         }
-        if(!itemDef.IsSingle)
+        if(itemDef.HasTag(ItemTag.Stackable))
             item.Value += value;
 
         OnChanged?.Invoke(id, Count(id));
     }
+    
+    public InventoryItemData[] GetAll(params ItemTag[] tags)
+    {
+        var retValue = new List<InventoryItemData>();
+        foreach (var item in _inventory)
+        {
+            var itemDef = DefsFacade.I.Items.Get(item.Id);
+            var isAllRequirementsMet = tags.All(x => itemDef.HasTag(x));
+            if (isAllRequirementsMet)
+                retValue.Add(item);
+        }
+        return retValue.ToArray();
+    }
+
     public void Remove(string id, int value)
     {
         var itemDef = DefsFacade.I.Items.Get(id);

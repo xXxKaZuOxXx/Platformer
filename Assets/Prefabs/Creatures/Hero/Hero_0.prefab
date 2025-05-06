@@ -62,7 +62,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _layer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 5376
   _isTouchingLayer: 0
 --- !u!1 &592649087786985548
 GameObject:
@@ -5268,6 +5268,7 @@ MonoBehaviour:
     _value: 1
   _armed: {fileID: 9100000, guid: 178ab4310c8f9894485623832f87edd0, type: 2}
   _unarmed: {fileID: 9100000, guid: 119789bd5dc44904e8e48ae2e59c307a, type: 2}
+  _throwSpawner: {fileID: 8478609651815071109}
   _hitParticles: {fileID: 592649088732457996}
 --- !u!114 &592649089048374394
 MonoBehaviour:
@@ -5386,7 +5387,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 592649089048374394}
-        m_MethodName: OnHeal
+        m_MethodName: OnNextItem
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5398,6 +5399,21 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 239ccb87-c4e1-4d0a-938e-72d842313873
     m_ActionName: Hero/Heal poition[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 592649089048374394}
+        m_MethodName: OnHeal
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d669d7ff-c925-45dc-86a4-ffa9edc1d3ef
+    m_ActionName: Hero/heal[/Keyboard/z]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Hero
@@ -5452,7 +5468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34cee34126624e4e9d8ebc078b6651e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 9
+  _health: 3
   _onDamage:
     m_PersistentCalls:
       m_Calls:
@@ -5516,7 +5532,7 @@ Animator:
   m_GameObject: {fileID: 592649089048374398}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 178ab4310c8f9894485623832f87edd0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 119789bd5dc44904e8e48ae2e59c307a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5732,7 +5748,7 @@ GameObject:
   - component: {fileID: 286153828170601003}
   - component: {fileID: 8478609651815071109}
   m_Layer: 13
-  m_Name: ThrowSwordSpawn
+  m_Name: ThrowSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

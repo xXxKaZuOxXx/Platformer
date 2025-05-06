@@ -51,9 +51,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Heal poition",
+                    "name": "NextItem",
                     "type": "Button",
                     "id": "239ccb87-c4e1-4d0a-938e-72d842313873",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "heal",
+                    "type": "Button",
+                    "id": "d669d7ff-c925-45dc-86a4-ffa9edc1d3ef",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -211,7 +220,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Heal poition",
+                    "action": "NextItem",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ca7703bc-68a6-4976-83b6-1367decf6a93",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "heal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

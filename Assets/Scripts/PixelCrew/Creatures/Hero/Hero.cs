@@ -22,6 +22,7 @@ public class Hero : Creature, IcanAddInInventory
     [SerializeField] private Cooldown _throwCooldown;
     [SerializeField] private AnimatorController _armed;
     [SerializeField] private AnimatorController _unarmed;
+    [SerializeField] private Spawn _throwSpawner;
 
     private static readonly int ThrowKey = Animator.StringToHash("throw");
     private static readonly int IsOnWall = Animator.StringToHash("IsOnWall");
@@ -37,9 +38,30 @@ public class Hero : Creature, IcanAddInInventory
     {
         _session.Data.Inventory.Add(id, value);
     }
-    private int CoinsCount => _session.Data.Inventory.Count("Coin");
-    private int SwordCount => _session.Data.Inventory.Count("Sword");
 
+    private const string SwordId = "Sword";
+    private int CoinsCount => _session.Data.Inventory.Count("Coin");
+    private int SwordCount => _session.Data.Inventory.Count(SwordId);
+
+    private string SelectedId => _session.QuickInventory.SelectedItem.Id;
+    private bool _canSuperThrow = false;
+    private bool CanThrow
+    {
+        get
+        {
+            var def = DefsFacade.I.Items.Get(SelectedId);
+            if (def.HasTag(ItemTag.Throwable) && _session.Data.Inventory.Count(SelectedId) > 3)
+            {
+                _canSuperThrow = true;
+            }
+            
+            if (SelectedId == SwordId)
+                return SwordCount > 1; 
+            if(_session.Data.Inventory.Count(SelectedId) > 0)
+                return def.HasTag(ItemTag.Throwable);
+            return false;
+        }
+    }
     
 
     protected override void Awake()
@@ -64,7 +86,7 @@ public class Hero : Creature, IcanAddInInventory
     }
     private void OnInventoryChanged(string id, int value)
     {
-        if (id == "Sword")
+        if (id == SwordId)
             UpdateHeroWeapon();
     }
 
@@ -175,13 +197,16 @@ public class Hero : Creature, IcanAddInInventory
 
     public void DoHeal()
     {
-       var poitions = _session.Data.Inventory.Count("Heal");
-        if (poitions > 0)
+        var healableId = _session.QuickInventory.SelectedItem.Id;
+        var healableDef = DefsFacade.I.HealItems.Get(healableId);
+        var def = DefsFacade.I.Items.Get(SelectedId);
+        if (def.HasTag(ItemTag.Healable))
         {
-            var health = GetComponent<Health>();
-            health.ApplyDamage(-5);
+            healableDef.Prefab.GetComponent<Damage>().ApplyDamage(this.gameObject);
+            _session.Data.Inventory.Remove(healableId, 1);
         }
-        _session.Data.Inventory.Remove("Heal", 1);
+
+    
     }
   
     private void UpdateHeroWeapon()
@@ -199,24 +224,30 @@ public class Hero : Creature, IcanAddInInventory
     public void OnDoThrow()
     {
         Sounds.Play("Range");
-        Particles.Spawn("Throw");
+        
+        
+        var throwableId = _session.QuickInventory.SelectedItem.Id;
+        var throwableDef = DefsFacade.I.Throwable.Get(throwableId);
+        _throwSpawner.SetPrefab(throwableDef.Projectile);
+        _throwSpawner.SpawnTarget();
+        _session.Data.Inventory.Remove(throwableId, 1);
     }
     internal void Throw(bool triple)
     {
-        if(_throwCooldown.IsReady && SwordCount > 1 && !triple)
+        if(_throwCooldown.IsReady && CanThrow && !triple)
         {
             Animator.SetTrigger(ThrowKey);
             _throwCooldown.Reset();
-            _session.Data.Inventory.Remove("Sword", 1);
+            
         }
-        else if(SwordCount > 3 && triple)
+        else if(CanThrow && triple && _canSuperThrow)
         {
             
             StartCoroutine(ThreeThrows());
             
                 //Animator.SetTrigger(ThrowKey);
                 //_session.Data.Swords -= 1;
-            
+            _canSuperThrow = false;
             _throwCooldown.Reset();
 
         }
@@ -227,9 +258,14 @@ public class Hero : Creature, IcanAddInInventory
         for (int i = 0; i < 3; i++)
         {
             Animator.SetTrigger(ThrowKey);
-            _session.Data.Inventory.Remove("Sword", 1);
+            
             yield return new WaitForSeconds(0.2f);
         }
         yield break;
+    }
+
+    public void NextItem()
+    {
+        _session.QuickInventory.SetNextItem();
     }
 }
