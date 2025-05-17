@@ -23,6 +23,10 @@ public class HUDController : MonoBehaviour
         var value = (float)newValue / maxHealth;
         _healthBar.SetProgress(value);
     }
+    public void OnSettings()
+    {
+        WindowUtils.CreateWindow("UI/InGameMenuWindow");
+    }
     private void OnDestroy()
     {
         _session.Data.Hp.OnChanged -= OnHealthChanged;

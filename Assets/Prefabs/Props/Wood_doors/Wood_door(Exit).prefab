@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4543815862828175050}
   - component: {fileID: 1756533723}
   - component: {fileID: 5384087821481077850}
+  - component: {fileID: 867864089477887971}
   m_Layer: 9
   m_Name: Wood_door(Exit)
   m_TagString: Interacteble
@@ -208,8 +209,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44b8a124a62ce4044bfc409744b6be5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: Key
-  _count: 1
+  _required:
+  - Id: Coin
+    Value: 2
+  - Id: Key
+    Value: 1
   _removeAfterUse: 1
   _onSuccess:
     m_PersistentCalls:
@@ -249,4 +253,33 @@ MonoBehaviour:
         m_CallState: 2
   _onFail:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 867864089477887971}
+        m_MethodName: Show
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &867864089477887971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4543815862828175093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3126ac6d6705fba4f83bda8ae0d7453f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mode: 0
+  _bound:
+    _sentences:
+    - You need a key...
+    - Try to search.
+  _external: {fileID: 0}

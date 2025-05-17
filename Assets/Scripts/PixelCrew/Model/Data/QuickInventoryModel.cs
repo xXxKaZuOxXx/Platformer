@@ -42,6 +42,6 @@ public class QuickInventoryModel : IDisposable
 
     public void Dispose()
     {
-        _data.Inventory.OnChanged -= OnChangedInventory;
+        _data.Inventory.OnChanged -= OnChangedInventory; 
     }
 }

@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "D:\\Fork\\DZ1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\creatures\\hero\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\creatures\\hero\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\components\\dialogs\\showdialogcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\components\\dialogs\\showdialogcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|d:\\fork\\dz1\\assets\\scripts\\pixelcrew\\model\\gamesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\model\\gamesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\ui\\hud\\dialogs\\dialogboxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\ui\\hud\\dialogs\\dialogboxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9564D1D6-043B-C2CC-787E-60F248BCEE84}|Assembly-CSharp-Editor.csproj|d:\\fork\\dz1\\assets\\scripts\\pixelcrew\\components\\dialogs\\editor\\showdialogcomponenteditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9564D1D6-043B-C2CC-787E-60F248BCEE84}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\scripts\\pixelcrew\\components\\dialogs\\editor\\showdialogcomponenteditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\model\\definitions\\dialogdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\model\\definitions\\dialogdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9564D1D6-043B-C2CC-787E-60F248BCEE84}|Assembly-CSharp-Editor.csproj|d:\\fork\\dz1\\assets\\scripts\\pixelcrew\\utils\\editor\\serializedpropertyextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9564D1D6-043B-C2CC-787E-60F248BCEE84}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\scripts\\pixelcrew\\utils\\editor\\serializedpropertyextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\components\\audio\\playsfxsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\components\\audio\\playsfxsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\components\\audio\\audiosetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\components\\audio\\audiosetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\ui\\widgets\\buttonsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\ui\\widgets\\buttonsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\components\\audio\\playsounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\components\\audio\\playsounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\utils\\audioutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\utils\\audioutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\model\\data\\dialogdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\model\\data\\dialogdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\ui\\hud\\quickinventory\\quickinventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,8 +55,36 @@
       "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\ui\\hud\\quickinventory\\inventoryitemwidget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\model\\gamesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\model\\gamesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\model\\data\\quickinventorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\model\\data\\quickinventorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\ui\\hud\\hudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\ui\\hud\\hudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\ui\\ingamemenu\\ingamemenuwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\ui\\ingamemenu\\ingamemenuwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\utils\\windowutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\utils\\windowutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\ui\\mainmenu\\mainmenuwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\ui\\mainmenu\\mainmenuwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\ui\\animatedwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\ui\\animatedwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\creatures\\hero\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\creatures\\hero\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\model\\data\\inventorydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,11 +103,11 @@
       "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\creatures\\hero\\heroinputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|d:\\fork\\dz1\\assets\\scripts\\pixelcrew\\components\\health\\damage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\components\\health\\damage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\components\\health\\damage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|d:\\fork\\dz1\\assets\\scripts\\pixelcrew\\model\\definitions\\healitemsdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\model\\definitions\\healitemsdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\model\\definitions\\healitemsdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -55,11 +119,11 @@
       "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\components\\gobased\\spawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|d:\\fork\\dz1\\assets\\scripts\\pixelcrew\\model\\definitions\\throwableitemsdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\model\\definitions\\throwableitemsdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\model\\definitions\\throwableitemsdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|d:\\fork\\dz1\\assets\\scripts\\pixelcrew\\model\\definitions\\playerdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\model\\definitions\\playerdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\model\\definitions\\playerdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -91,16 +155,8 @@
       "RelativeMoniker": "D:0:0:{9564D1D6-043B-C2CC-787E-60F248BCEE84}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\scripts\\pixelcrew\\ui\\widgets\\editor\\custombuttoneditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\components\\audio\\playsounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\components\\audio\\playsounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\ui\\widgets\\progressbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\ui\\widgets\\progressbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\ui\\hud\\hudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\ui\\hud\\hudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\ui\\widgets\\audiosettingswidget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -109,10 +165,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\ui\\settings\\settingswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\ui\\settings\\settingswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\ui\\animatedwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pixelcrew\\ui\\animatedwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EB22447-BC16-1550-CB79-DEC2421761E9}|Assembly-CSharp.csproj|D:\\Fork\\DZ1\\assets\\scripts\\pixelcrew\\model\\data\\properties\\floatpersistentproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -170,7 +222,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 36,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -178,20 +230,192 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SerializedPropertyExtensions.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Utils\\Editor\\SerializedPropertyExtensions.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Utils\\Editor\\SerializedPropertyExtensions.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Utils\\Editor\\SerializedPropertyExtensions.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Utils\\Editor\\SerializedPropertyExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T17:47:02.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShowDialogComponentEditor.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Dialogs\\Editor\\ShowDialogComponentEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\Dialogs\\Editor\\ShowDialogComponentEditor.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Dialogs\\Editor\\ShowDialogComponentEditor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Components\\Dialogs\\Editor\\ShowDialogComponentEditor.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T17:38:33.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DialogDef.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Definitions\\DialogDef.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\DialogDef.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Definitions\\DialogDef.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\DialogDef.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T17:20:02.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShowDialogComponent.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Dialogs\\ShowDialogComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\Dialogs\\ShowDialogComponent.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Dialogs\\ShowDialogComponent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Components\\Dialogs\\ShowDialogComponent.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T17:16:13.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ButtonSound.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\Widgets\\ButtonSound.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\UI\\Widgets\\ButtonSound.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\Widgets\\ButtonSound.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\UI\\Widgets\\ButtonSound.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T22:43:36.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AudioSetting.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Audio\\AudioSetting.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\Audio\\AudioSetting.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Audio\\AudioSetting.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Components\\Audio\\AudioSetting.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T22:40:27.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlaySfxSound.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Audio\\PlaySfxSound.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\Audio\\PlaySfxSound.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Audio\\PlaySfxSound.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Components\\Audio\\PlaySfxSound.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T22:38:55.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AudioUtils.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Utils\\AudioUtils.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Utils\\AudioUtils.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Utils\\AudioUtils.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Utils\\AudioUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T22:36:29.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlaySounds.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Audio\\PlaySounds.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\Audio\\PlaySounds.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Audio\\PlaySounds.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Components\\Audio\\PlaySounds.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T18:25:45.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DialogData.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Data\\DialogData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Data\\DialogData.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Data\\DialogData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Data\\DialogData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T22:25:45.219Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "DialogBoxController.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\HUD\\Dialogs\\DialogBoxController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\UI\\HUD\\Dialogs\\DialogBoxController.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\HUD\\Dialogs\\DialogBoxController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\UI\\HUD\\Dialogs\\DialogBoxController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwB8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T22:18:47.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainMenuWindow.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\MainMenu\\MainMenuWindow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\UI\\MainMenu\\MainMenuWindow.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\MainMenu\\MainMenuWindow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\UI\\MainMenu\\MainMenuWindow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T12:14:09.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WindowUtils.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Utils\\WindowUtils.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Utils\\WindowUtils.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Utils\\WindowUtils.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Utils\\WindowUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T12:10:26.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "InGameMenuWindow.cs",
+              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\InGameMenu\\InGameMenuWindow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\UI\\InGameMenu\\InGameMenuWindow.cs",
+              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\InGameMenu\\InGameMenuWindow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\UI\\InGameMenu\\InGameMenuWindow.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T11:55:14.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "GameSession.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\GameSession.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\GameSession.cs",
               "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\GameSession.cs",
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\GameSession.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wEAAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T16:19:31.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T16:19:31.277Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 25,
               "Title": "Damage.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Health\\Damage.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\Health\\Damage.cs",
@@ -199,12 +423,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Components\\Health\\Damage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T15:31:28.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T15:31:28.284Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 30,
               "Title": "PlayerDef.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Definitions\\PlayerDef.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\PlayerDef.cs",
@@ -212,12 +435,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\PlayerDef.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T14:26:59.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T14:26:59.558Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 26,
               "Title": "HealItemsDefinitions.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Definitions\\HealItemsDefinitions.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\HealItemsDefinitions.cs",
@@ -225,12 +447,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\HealItemsDefinitions.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T13:57:45.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T13:57:45.74Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 29,
               "Title": "ThrowableItemsDef.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Definitions\\ThrowableItemsDef.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\ThrowableItemsDef.cs",
@@ -238,12 +459,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\ThrowableItemsDef.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T22:16:16.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T22:16:16.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 28,
               "Title": "Spawn.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\GoBased\\Spawn.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\GoBased\\Spawn.cs",
@@ -251,12 +471,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Components\\GoBased\\Spawn.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAgwA4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T00:27:14.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T00:27:14.514Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 22,
               "Title": "InventoryItemsDefinitions.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Definitions\\InventoryItemsDefinitions.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\InventoryItemsDefinitions.cs",
@@ -264,12 +483,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\InventoryItemsDefinitions.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAQwBUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T14:11:18.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T14:11:18.199Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 33,
               "Title": "ItemTag.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Definitions\\ItemTag.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\ItemTag.cs",
@@ -277,12 +495,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\ItemTag.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T15:23:00.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T15:23:00.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 23,
               "Title": "ObservableProperty.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Data\\Properties\\ObservableProperty.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Data\\Properties\\ObservableProperty.cs",
@@ -290,51 +507,47 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Data\\Properties\\ObservableProperty.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwCIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T14:43:31.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T14:43:31.721Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "QuickInventoryModel.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Data\\QuickInventoryModel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Data\\QuickInventoryModel.cs",
               "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Data\\QuickInventoryModel.cs",
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Data\\QuickInventoryModel.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAcwCwAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T13:13:10.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T13:13:10.677Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "InventoryItemWidget.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\HUD\\QuickInventory\\InventoryItemWidget.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\UI\\HUD\\QuickInventory\\InventoryItemWidget.cs",
               "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\HUD\\QuickInventory\\InventoryItemWidget.cs",
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\UI\\HUD\\QuickInventory\\InventoryItemWidget.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwCoAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCoAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T12:03:49.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T12:03:49.532Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "QuickInventoryController.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\HUD\\QuickInventory\\QuickInventoryController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\UI\\HUD\\QuickInventory\\QuickInventoryController.cs",
               "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\HUD\\QuickInventory\\QuickInventoryController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\UI\\HUD\\QuickInventory\\QuickInventoryController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAIBJwDAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T12:32:34.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T12:32:34.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 38,
               "Title": "ProgressBar.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\Widgets\\ProgressBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\UI\\Widgets\\ProgressBar.cs",
@@ -346,19 +559,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 15,
               "Title": "HUDController.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\HUD\\HUDController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\UI\\HUD\\HUDController.cs",
               "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\HUD\\HUDController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\UI\\HUD\\HUDController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBsAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T23:11:04.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 39,
               "Title": "AudioSettingsWidget.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\Widgets\\AudioSettingsWidget.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\UI\\Widgets\\AudioSettingsWidget.cs",
@@ -370,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 40,
               "Title": "SettingsWindow.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\Settings\\SettingsWindow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\UI\\Settings\\SettingsWindow.cs",
@@ -382,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 41,
               "Title": "FloatPersistentProperty.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Data\\Properties\\FloatPersistentProperty.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Data\\Properties\\FloatPersistentProperty.cs",
@@ -394,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 42,
               "Title": "PersistentProperty.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Data\\Properties\\PersistentProperty.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Data\\Properties\\PersistentProperty.cs",
@@ -406,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 36,
               "Title": "GameSettings.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Data\\GameSettings.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Data\\GameSettings.cs",
@@ -414,24 +627,23 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Data\\GameSettings.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAowAwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T13:51:04.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T13:51:04.863Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 19,
               "Title": "AnimatedWindow.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\AnimatedWindow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\UI\\AnimatedWindow.cs",
               "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\AnimatedWindow.cs",
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\UI\\AnimatedWindow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T21:06:05.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 37,
               "Title": "CustomButtonEditor.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\Widgets\\Editor\\CustomButtonEditor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\UI\\Widgets\\Editor\\CustomButtonEditor.cs",
@@ -443,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 43,
               "Title": "CustomButton.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\UI\\Widgets\\CustomButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\UI\\Widgets\\CustomButton.cs",
@@ -455,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 46,
               "Title": "BaseProjectile.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Creatures\\Weapons\\BaseProjectile.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Creatures\\Weapons\\BaseProjectile.cs",
@@ -467,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 48,
               "Title": "PointPatrol.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Creatures\\Mobs\\Patrolling\\PointPatrol.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Creatures\\Mobs\\Patrolling\\PointPatrol.cs",
@@ -479,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 47,
               "Title": "SpawnListComponent.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\GoBased\\SpawnListComponent.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\GoBased\\SpawnListComponent.cs",
@@ -491,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 44,
               "Title": "MobAI.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Creatures\\Mobs\\MobAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Creatures\\Mobs\\MobAI.cs",
@@ -503,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 49,
               "Title": "PlatformPatrol.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Creatures\\Mobs\\Patrolling\\PlatformPatrol.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Creatures\\Mobs\\Patrolling\\PlatformPatrol.cs",
@@ -515,7 +727,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 50,
               "Title": "Collector.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Collectables\\Collector.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\Collectables\\Collector.cs",
@@ -527,7 +739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 51,
               "Title": "InventoryAdd.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Collectables\\InventoryAdd.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\Collectables\\InventoryAdd.cs",
@@ -539,7 +751,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 35,
               "Title": "IcanAddInInventory.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Data\\IcanAddInInventory.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Data\\IcanAddInInventory.cs",
@@ -547,24 +759,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Data\\IcanAddInInventory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T14:57:00.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T14:57:00.429Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "PlaySounds.cs",
-              "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Audio\\PlaySounds.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Components\\Audio\\PlaySounds.cs",
-              "ToolTip": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Components\\Audio\\PlaySounds.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Components\\Audio\\PlaySounds.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T18:25:45.122Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 32,
               "Title": "InventoryIdAttribute.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Definitions\\InventoryIdAttribute.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\InventoryIdAttribute.cs",
@@ -572,12 +771,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\InventoryIdAttribute.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T18:23:52.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T18:23:52.467Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 31,
               "Title": "InventoryIdAttributeDrawer.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Definitions\\Editor\\InventoryIdAttributeDrawer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\Editor\\InventoryIdAttributeDrawer.cs",
@@ -585,12 +783,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\Editor\\InventoryIdAttributeDrawer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T18:25:07.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T18:25:07.545Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 52,
               "Title": "TotemsAI.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Creatures\\Mobs\\TotemsAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Creatures\\Mobs\\TotemsAI.cs",
@@ -602,7 +799,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 45,
               "Title": "ShootingTrapAI.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Creatures\\Mobs\\ShootingTrapAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Creatures\\Mobs\\ShootingTrapAI.cs",
@@ -614,7 +811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 20,
               "Title": "Hero.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Creatures\\Hero\\Hero.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Creatures\\Hero\\Hero.cs",
@@ -622,12 +819,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Creatures\\Hero\\Hero.cs",
               "ViewState": "AgIAAA4BAAAAAAAAAAAQwM0AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T17:19:41.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T17:19:41.249Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 24,
               "Title": "HeroInputReader.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Creatures\\Hero\\HeroInputReader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Creatures\\Hero\\HeroInputReader.cs",
@@ -635,12 +831,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Creatures\\Hero\\HeroInputReader.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAAAFQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T17:59:58.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T17:59:58.808Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 21,
               "Title": "InventoryData.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Data\\InventoryData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Data\\InventoryData.cs",
@@ -648,12 +843,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Data\\InventoryData.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T11:15:09.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T11:15:09.987Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 27,
               "Title": "DefsFacade.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Definitions\\DefsFacade.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\DefsFacade.cs",
@@ -661,12 +855,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Definitions\\DefsFacade.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwBAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T14:10:46.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T14:10:46.189Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 34,
               "Title": "PlayerData.cs",
               "DocumentMoniker": "D:\\Fork\\DZ1\\Assets\\Scripts\\PixelCrew\\Model\\Data\\PlayerData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PixelCrew\\Model\\Data\\PlayerData.cs",
@@ -674,8 +867,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PixelCrew\\Model\\Data\\PlayerData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T11:15:53.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T11:15:53.416Z"
             }
           ]
         }

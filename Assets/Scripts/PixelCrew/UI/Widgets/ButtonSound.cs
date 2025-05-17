@@ -10,8 +10,8 @@ public class ButtonSound : MonoBehaviour, IPointerClickHandler
     private AudioSource _source;
     public void OnPointerClick(PointerEventData eventData)
     {
-        if(_source == null)
-            _source =  GameObject.FindWithTag("SfxAudioSource").GetComponent<AudioSource>();
+        if (_source == null)
+            _source = AudioUtils.FindSfxSource();
 
         _source.PlayOneShot(_audioClip);
     }

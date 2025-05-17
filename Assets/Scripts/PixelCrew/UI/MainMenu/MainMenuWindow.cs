@@ -9,9 +9,7 @@ public class MainMenuWindow : AnimatedWindow
     private Action _closeAction;
     public void OnShowSettings()
     {
-        var window = Resources.Load<GameObject>("UI/SettingsWindow");
-        var canvas = FindObjectOfType<Canvas>();
-        Instantiate(window, canvas.transform);
+        WindowUtils.CreateWindow("UI/SettingsWindow");
     }
 
     public void OnStartGame()
