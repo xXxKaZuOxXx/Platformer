@@ -11,8 +11,8 @@ namespace PixelCrew.Components
     {
         [SerializeField] private int _health;
         [SerializeField] private UnityEvent _onDamage;
-        [SerializeField] private UnityEvent _onDie;
-        [SerializeField] private HealthChangeEvent _onChange;
+        [SerializeField] public UnityEvent _onDie;
+        [SerializeField] public HealthChangeEvent _onChange;
         private bool dead = false;
         public int HealthValue { get { return _health; } }
 

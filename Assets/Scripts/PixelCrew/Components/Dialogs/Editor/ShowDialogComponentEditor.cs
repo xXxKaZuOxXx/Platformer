@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Configuration;
 using UnityEditor;
 using UnityEngine;
 
@@ -7,14 +8,18 @@ using UnityEngine;
 public class ShowDialogComponentEditor : UnityEditor.Editor
 {
     private SerializedProperty _modeProperty;
+    
     private void OnEnable()
     {
         _modeProperty = serializedObject.FindProperty("_mode");
+        
     }
     public override void OnInspectorGUI()
     {
+        
         EditorGUILayout.PropertyField(_modeProperty);
         ShowDialogComponent.Mode mode;
+
 
         if (_modeProperty.GetEnum(out mode))
         {

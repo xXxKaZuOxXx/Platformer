@@ -10,9 +10,10 @@ public class ShowDialogComponent : MonoBehaviour
         Bound,
         External
     }
-    [SerializeField] private Mode _mode;
-    [SerializeField] private DialogData _bound;
-    [SerializeField] private DialogDef _external;
+    [SerializeField] public Mode _mode;
+    [SerializeField] public DialogData _bound;
+    [SerializeField] public DialogDef _external;
+    //[SerializeField] public string[] LocalisationKeys;
 
     private DialogBoxController _dialogBox;
     public void Show()

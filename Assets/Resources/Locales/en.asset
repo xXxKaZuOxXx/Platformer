@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be1c3aafe46fb34a9465a6eaf7576e6, type: 3}
+  m_Name: en
+  m_EditorClassIdentifier: 
+  _url: https://docs.google.com/spreadsheets/d/e/2PACX-1vR1eTtFUMrm44N-OJdRliKWK7erdqQxH85IyLQQPpXwECsci9ANKPsdm-EsX0Z3WEdK4mEGOL1T6n97/pub?gid=0&single=true&output=tsv
+  _localItems:
+  - Key: menu_title
+    Value: "menu\r"
+  - Key: button_start
+    Value: "start\r"
+  - Key: button_option
+    Value: "options\r"
+  - Key: button_exit
+    Value: "exit\r"
+  - Key: selected_language
+    Value: "Selected language is {0}\r"
+  - Key: button_language
+    Value: "Language\r"
+  - Key: text_music
+    Value: "Music\r"
+  - Key: door_dialog1
+    Value: "You need a key...\r"
+  - Key: door_dialog2
+    Value: "Try to search.\r"
+  - Key: Crubby_GetGem1
+    Value: "Get me a green Gem\r"
+  - Key: Crubby_GetGem2
+    Value: "An I will show you a miracle\r"
+  - Key: Crubby_GetGem3
+    Value: "And now a miracle!\r"
+  - Key: Crubby_GetGem4
+    Value: "I have the gem\r"
+  - Key: Crubby_GetGem5
+    Value: "And you are not\r"
+  - Key: Crubby_GetGem6
+    Value: Ahahaha!

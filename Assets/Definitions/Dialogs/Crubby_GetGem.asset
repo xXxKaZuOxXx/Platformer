@@ -16,3 +16,6 @@ MonoBehaviour:
     _sentences:
     - Get me a green Gem
     - An I will show you a miracle
+    _localisationKeys:
+    - Crubby_GetGem1
+    - Crubby_GetGem2

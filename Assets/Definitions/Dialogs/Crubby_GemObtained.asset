@@ -18,3 +18,8 @@ MonoBehaviour:
     - I have the gem
     - And you are not
     - Ahahaha!
+    _localisationKeys:
+    - Crubby_GetGem3
+    - Crubby_GetGem4
+    - Crubby_GetGem5
+    - Crubby_GetGem6

@@ -62,7 +62,7 @@ namespace PixelCrew.Model
             {
                 if (session != this)
                 {
-                    return true;
+                    return true; 
                 }
             }
             return false;

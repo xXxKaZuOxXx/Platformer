@@ -12102,10 +12102,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sharky
       objectReference: {fileID: 0}
-    - target: {fileID: 592649089048374398, guid: a73e6b19f17affa498005ef62a52c26d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a73e6b19f17affa498005ef62a52c26d, type: 3}

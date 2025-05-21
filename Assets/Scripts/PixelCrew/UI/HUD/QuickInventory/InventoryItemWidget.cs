@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using static System.Collections.Specialized.BitVector32;
 
-public class InventoryItemWidget : MonoBehaviour
+public class InventoryItemWidget : MonoBehaviour, IItemRenderer<InventoryItemData>
 {
     [SerializeField] private Image _icon;
     [SerializeField] private GameObject _selection;
