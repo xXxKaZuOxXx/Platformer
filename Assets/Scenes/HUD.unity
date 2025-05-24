@@ -651,6 +651,7 @@ GameObject:
   - component: {fileID: 934730876}
   - component: {fileID: 934730875}
   - component: {fileID: 934730877}
+  - component: {fileID: 934730878}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -674,8 +675,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -22.6, y: 10.448}
-  m_SizeDelta: {x: 39.20761, y: 11.104988}
+  m_AnchoredPosition: {x: -27.83, y: 10.448}
+  m_SizeDelta: {x: 49.67282, y: 11.104988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &934730875
 MonoBehaviour:
@@ -772,6 +773,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &934730878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934730873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848ca330c13c3da4bbc1456e469d7a26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _key: button_continue
+  _capitalize: 0
 --- !u!1 &1027370468
 GameObject:
   m_ObjectHideFlags: 0

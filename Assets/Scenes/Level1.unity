@@ -13253,7 +13253,7 @@ MonoBehaviour:
         Value: 16
     Hp:
       _value: 15
-  _defaultCheckPoint: level1-checkpoint1
+  _defaultCheckPoint: level1-checkpoint3
 --- !u!4 &949185100
 Transform:
   m_ObjectHideFlags: 0

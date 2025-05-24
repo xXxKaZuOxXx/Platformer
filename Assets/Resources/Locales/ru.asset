@@ -45,4 +45,6 @@ MonoBehaviour:
   - Key: Crubby_GetGem5
     Value: "\u0410 \u0443 \u0442\u0435\u0431\u044F \u043D\u0435\u0442\r"
   - Key: Crubby_GetGem6
-    Value: "\u0425\u0410\u0425\u0410\u0425\u0410!!!"
+    Value: "\u0425\u0410\u0425\u0410\u0425\u0410!!!\r"
+  - Key: button_continue
+    Value: "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"

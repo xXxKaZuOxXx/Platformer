@@ -43,4 +43,6 @@ MonoBehaviour:
   - Key: Crubby_GetGem5
     Value: "And you are not\r"
   - Key: Crubby_GetGem6
-    Value: Ahahaha!
+    Value: "Ahahaha!\r"
+  - Key: button_continue
+    Value: Continue
