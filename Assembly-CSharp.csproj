@@ -80,8 +80,10 @@
     <Compile Include="Assets\Scripts\PixelCrew\Components\Interactions\Interactive.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Interactions\RequireItem.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Interactions\Switch.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\LevelManegement\CheckPointComponent.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\LevelManegement\ExitLevel.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\LevelManegement\ReloadLevel.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\LevelManegement\SetFollowComponent.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Movements\VerticalLevitation.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\OnDestroyAnimation.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\PlatformMove.cs" />
@@ -99,6 +101,8 @@
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\BaseProjectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\Projectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\SinusoidalProjectile.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Effects\InfiniteBackground.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Effects\ParallaxEffect.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Data\DialogData.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Data\GameSettings.cs" />
@@ -150,6 +154,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\Utils\Disposables\CompositeDisposable.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\Disposables\UnityEventExtensions.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\GameObjectExtension.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Utils\GizmoUtils.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\HandlesUtils.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\WindowUtils.cs" />
     <Compile Include="Assets\UserInput\HEroInputAction.cs" />
