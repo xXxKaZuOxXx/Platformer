@@ -8,6 +8,7 @@ public static class WindowUtils
     {
         var window = Resources.Load<GameObject>(resourcePath);
         var canvas = Object.FindObjectOfType<Canvas>();
-        Object.Instantiate(window, canvas.transform);
+        var can = GameObject.FindGameObjectWithTag("OverlayCanvas");
+        Object.Instantiate(window, can.transform);
     }
 }

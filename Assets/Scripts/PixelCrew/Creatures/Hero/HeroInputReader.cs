@@ -66,13 +66,13 @@ public class HeroInputReader : MonoBehaviour
         if (_holdDuration != 0 && _holdDuration > 3)
         {
                 bool triple = true;
-                _hero.Throw(triple);
+                _hero.UseInventory(triple);
                 
         }
         else if(_holdDuration < 3 && context.canceled)
         {
                 bool triple = false;
-                _hero.Throw(triple);
+                _hero.UseInventory(triple);
         }
 
         _holdDuration = 0;
@@ -92,6 +92,11 @@ public class HeroInputReader : MonoBehaviour
         {
             _hero.NextItem();
         }
+    }
+    public void OnUsePerk(InputAction.CallbackContext callbackContext)
+    {
+        if (callbackContext.canceled)
+            _hero.UsePerk();
     }
 
 }

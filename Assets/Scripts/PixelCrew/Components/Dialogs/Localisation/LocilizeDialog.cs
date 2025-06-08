@@ -40,11 +40,11 @@ public class LocilizeDialog : MonoBehaviour
                 if (indexToChange != -1)
                 {
                     var localized = LocalisationManager.I.Localise(_keys[i]);
-                    _text.Data._sentences[indexToChange] = _capitalize ? localized.ToUpper() : localized;
+                    _text.Data._sentences[indexToChange]._value = _capitalize ? localized.ToUpper() : localized;
                 }
                 else
                 {
-                    _text.Data._sentences[0] = "ERROR";
+                    _text.Data._sentences[0]._value = "ERROR";
                 }
             }
             else
@@ -55,7 +55,7 @@ public class LocilizeDialog : MonoBehaviour
                     if (indexToChange != -1)
                     {
                         var localized = LocalisationManager.I.Localise(_keys[i]);
-                        _dialogDefs[k].Data._sentences[indexToChange] = _capitalize ? localized.ToUpper() : localized;
+                        _dialogDefs[k].Data._sentences[indexToChange]._value = _capitalize ? localized.ToUpper() : localized;
                     }
                 }
                 

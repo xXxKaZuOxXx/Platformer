@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -21,7 +22,7 @@ public class OptionItemWidget : MonoBehaviour, IItemRenderer<OptionData>
         _onSelect.Invoke(_data);
         
     }
-
+    [Serializable]
     public class SelectOption : UnityEvent<OptionData>
     {
     }

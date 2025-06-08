@@ -89,6 +89,15 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UsePerk"",
+                    ""type"": ""Button"",
+                    ""id"": ""97e56179-77e7-407f-959b-68e588a67fa2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -256,6 +265,17 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
                     ""action"": ""heal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ee2bc130-65ac-4326-8bab-1dcebff8aa87"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UsePerk"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -271,6 +291,7 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
         m_Hero_Throw = m_Hero.FindAction("Throw", throwIfNotFound: true);
         m_Hero_NextItem = m_Hero.FindAction("NextItem", throwIfNotFound: true);
         m_Hero_heal = m_Hero.FindAction("heal", throwIfNotFound: true);
+        m_Hero_UsePerk = m_Hero.FindAction("UsePerk", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -337,6 +358,7 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
     private readonly InputAction m_Hero_Throw;
     private readonly InputAction m_Hero_NextItem;
     private readonly InputAction m_Hero_heal;
+    private readonly InputAction m_Hero_UsePerk;
     public struct HeroActions
     {
         private @HEroInputAction m_Wrapper;
@@ -348,6 +370,7 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
         public InputAction @Throw => m_Wrapper.m_Hero_Throw;
         public InputAction @NextItem => m_Wrapper.m_Hero_NextItem;
         public InputAction @heal => m_Wrapper.m_Hero_heal;
+        public InputAction @UsePerk => m_Wrapper.m_Hero_UsePerk;
         public InputActionMap Get() { return m_Wrapper.m_Hero; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -378,6 +401,9 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
                 @heal.started -= m_Wrapper.m_HeroActionsCallbackInterface.OnHeal;
                 @heal.performed -= m_Wrapper.m_HeroActionsCallbackInterface.OnHeal;
                 @heal.canceled -= m_Wrapper.m_HeroActionsCallbackInterface.OnHeal;
+                @UsePerk.started -= m_Wrapper.m_HeroActionsCallbackInterface.OnUsePerk;
+                @UsePerk.performed -= m_Wrapper.m_HeroActionsCallbackInterface.OnUsePerk;
+                @UsePerk.canceled -= m_Wrapper.m_HeroActionsCallbackInterface.OnUsePerk;
             }
             m_Wrapper.m_HeroActionsCallbackInterface = instance;
             if (instance != null)
@@ -403,6 +429,9 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
                 @heal.started += instance.OnHeal;
                 @heal.performed += instance.OnHeal;
                 @heal.canceled += instance.OnHeal;
+                @UsePerk.started += instance.OnUsePerk;
+                @UsePerk.performed += instance.OnUsePerk;
+                @UsePerk.canceled += instance.OnUsePerk;
             }
         }
     }
@@ -416,5 +445,6 @@ public partial class @HEroInputAction : IInputActionCollection2, IDisposable
         void OnThrow(InputAction.CallbackContext context);
         void OnNextItem(InputAction.CallbackContext context);
         void OnHeal(InputAction.CallbackContext context);
+        void OnUsePerk(InputAction.CallbackContext context);
     }
 }

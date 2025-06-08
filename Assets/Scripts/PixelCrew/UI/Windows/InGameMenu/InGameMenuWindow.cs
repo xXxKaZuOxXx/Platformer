@@ -16,7 +16,9 @@ public class InGameMenuWindow : AnimatedWindow
     public void OnShowSettings()
     {
         WindowUtils.CreateWindow("UI/SettingsWindow");
+        
     }
+    
     public void OnLanguages()
     {
         WindowUtils.CreateWindow("UI/LocalisationWindow");

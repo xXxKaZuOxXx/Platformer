@@ -8,11 +8,12 @@ using UnityEngine;
 public class ShowDialogComponentEditor : UnityEditor.Editor
 {
     private SerializedProperty _modeProperty;
+    private SerializedProperty _onCompleteProperty;
     
     private void OnEnable()
     {
         _modeProperty = serializedObject.FindProperty("_mode");
-        
+        _onCompleteProperty = serializedObject.FindProperty("_onComplete");
     }
     public override void OnInspectorGUI()
     {
@@ -33,6 +34,7 @@ public class ShowDialogComponentEditor : UnityEditor.Editor
                     break;
             }
         }
+        EditorGUILayout.PropertyField(_onCompleteProperty);
         serializedObject.ApplyModifiedProperties();
     }
 }

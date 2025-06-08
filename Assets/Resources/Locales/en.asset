@@ -45,4 +45,22 @@ MonoBehaviour:
   - Key: Crubby_GetGem6
     Value: "Ahahaha!\r"
   - Key: button_continue
-    Value: Continue
+    Value: "Continue\r"
+  - Key: crubby_perkDialog1
+    Value: "I can teach you!\r"
+  - Key: crubby_perkDialog2
+    Value: "Good!\r"
+  - Key: crubby_perkDialog3
+    Value: "Let's go!\r"
+  - Key: price_label
+    Value: "Price:\r"
+  - Key: button_buy
+    Value: "Buy\r"
+  - Key: button_use
+    Value: "Use\r"
+  - Key: Double Jump
+    Value: "double-jump\r"
+  - Key: Super Throw
+    Value: "super-throw\r"
+  - Key: Shield
+    Value: shield

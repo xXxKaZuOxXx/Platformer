@@ -6,15 +6,20 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Defs/DefsFacade", fileName = "DefsFacade")]
 public class DefsFacade : ScriptableObject
 {
-    [SerializeField] private InventoryItemsDefinitions _items;
+    [SerializeField] private ItemsRepository _items;
     [SerializeField] private PlayerDef _playerDef;
-    [SerializeField] private ThrowableItemsDef _throwable;
+    [SerializeField] private ThrowableRepository _throwable;
     [SerializeField] private HealItemsDefinitions _healItems;
+    [SerializeField] private PoitionRepository _poitions;
+    [SerializeField] private PerkRepository _perks;
 
-    public InventoryItemsDefinitions Items => _items;
+    public ItemsRepository Items => _items;
     public PlayerDef PlayerDef => _playerDef;
-    public ThrowableItemsDef Throwable => _throwable;
+    public PerkRepository Perks => _perks;
+    public ThrowableRepository Throwable => _throwable;
     public HealItemsDefinitions HealItems => _healItems;
+
+    public PoitionRepository Poitions => _poitions;
 
     private static DefsFacade _instance;
     public static DefsFacade I => _instance == null? LoadDefs(): _instance;

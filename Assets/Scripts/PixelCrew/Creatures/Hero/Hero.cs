@@ -23,6 +23,7 @@ public class Hero : Creature, IcanAddInInventory
     [SerializeField] private AnimatorController _armed;
     [SerializeField] private AnimatorController _unarmed;
     [SerializeField] private Spawn _throwSpawner;
+    [SerializeField] private Shield _shield;
 
     private static readonly int ThrowKey = Animator.StringToHash("throw");
     private static readonly int IsOnWall = Animator.StringToHash("IsOnWall");
@@ -62,7 +63,14 @@ public class Hero : Creature, IcanAddInInventory
             return false;
         }
     }
-    
+    public void UsePerk()
+    {
+        if(_session.PerksModel.IsShieldSupported)
+        {
+            _shield.Use();
+            _session.PerksModel.Cooldown.Reset();
+        }
+    }
 
     protected override void Awake()
     {
@@ -133,10 +141,10 @@ public class Hero : Creature, IcanAddInInventory
     }
     protected override float CalculateJumpVelocity(float yVelocity)
     {
-        if (!IsGrounded && _allowDoubleJump && !_isOnWall)
+        if (!IsGrounded && _allowDoubleJump && _session.PerksModel.IsDubleJumpSupported && !_isOnWall)
         {
+            _session.PerksModel.Cooldown.Reset();
 
-            
             _allowDoubleJump = false;
             DoJumpVfx();
             return JumpSpeed;
@@ -197,14 +205,14 @@ public class Hero : Creature, IcanAddInInventory
 
     public void DoHeal()
     {
-        var healableId = _session.QuickInventory.SelectedItem.Id;
-        var healableDef = DefsFacade.I.HealItems.Get(healableId);
-        var def = DefsFacade.I.Items.Get(SelectedId);
-        if (def.HasTag(ItemTag.Healable))
-        {
-            healableDef.Prefab.GetComponent<Damage>().ApplyDamage(this.gameObject);
-            _session.Data.Inventory.Remove(healableId, 1);
-        }
+        //var healableId = _session.QuickInventory.SelectedItem.Id;
+        //var healableDef = DefsFacade.I.HealItems.Get(healableId);
+        //var def = DefsFacade.I.Items.Get(SelectedId);
+        //if (def.HasTag(ItemTag.Healable))
+        //{
+        //    healableDef.Prefab.GetComponent<Damage>().ApplyDamage(this.gameObject);
+        //    _session.Data.Inventory.Remove(healableId, 1);
+        //}
 
     
     }
@@ -232,26 +240,73 @@ public class Hero : Creature, IcanAddInInventory
         _throwSpawner.SpawnTarget();
         _session.Data.Inventory.Remove(throwableId, 1);
     }
-    internal void Throw(bool triple)
+    public void UseInventory(bool triple)
     {
-        if(_throwCooldown.IsReady && CanThrow && !triple)
+        
+        var isThrowable = IsSelectedItem(ItemTag.Throwable);
+        if (isThrowable)
+        {
+
+            PerformThrowing(triple);
+        }
+        else if(IsSelectedItem(ItemTag.Potion))
+        {
+            UsePoition();
+        }
+        
+        
+    }
+
+    private void UsePoition()
+    {
+        var potion = DefsFacade.I.Poitions.Get(SelectedId);
+        switch(potion.Effect)
+        {
+            case Effect.AddHp:
+                _session.Data.Hp.Value += (int)potion.Value;
+                break;
+            case Effect.SpeedUp:
+                _speedUpCooldown.Value = _speedUpCooldown.RemainingTime + potion.Time;
+                _additionalSpeed = Mathf.Max(potion.Value, _additionalSpeed);
+                _speedUpCooldown.Reset();
+                break;
+            default: throw new ArgumentOutOfRangeException();
+        }
+       
+        _session.Data.Inventory.Remove(potion.Id, 1);
+    }
+    private readonly Cooldown _speedUpCooldown = new Cooldown();
+    private float _additionalSpeed;
+    protected override float CalculateSpeed()
+    {
+        if (_speedUpCooldown.IsReady)
+            _additionalSpeed = 0f;
+
+        return base.CalculateSpeed() + _additionalSpeed; 
+    }
+    private bool IsSelectedItem(ItemTag tag)
+    {
+        return _session.QuickInventory.SelectedDef.HasTag(tag);
+    }
+    public void PerformThrowing(bool triple)
+    {
+        if (_throwCooldown.IsReady && CanThrow && !triple)
         {
             Animator.SetTrigger(ThrowKey);
             _throwCooldown.Reset();
-            
+
         }
-        else if(CanThrow && triple && _canSuperThrow)
+        else if (CanThrow && triple && _canSuperThrow && _session.PerksModel.IsSupperThrowSupported)
         {
-            
+            _session.PerksModel.Cooldown.Reset();
             StartCoroutine(ThreeThrows());
-            
-                //Animator.SetTrigger(ThrowKey);
-                //_session.Data.Swords -= 1;
+
+            //Animator.SetTrigger(ThrowKey);
+            //_session.Data.Swords -= 1;
             _canSuperThrow = false;
             _throwCooldown.Reset();
 
         }
-        
     }
     private IEnumerator ThreeThrows()
     {

@@ -7,14 +7,30 @@ using UnityEngine;
 public class HUDController : MonoBehaviour
 {
     [SerializeField] private ProgressBar _healthBar;
+    [SerializeField] private CurrentPerkWidget _currentPerk;
 
     private GameSession _session;
+    private readonly CompositeDisposable _trash  = new CompositeDisposable();
     private void Start()
     {
         _session = FindObjectOfType<GameSession>();
-        _session.Data.Hp.OnChanged += OnHealthChanged;
+        _trash.Retain(_session.Data.Hp.SubscribeAndInvoke(OnHealthChanged));
+        _trash.Retain(_session.PerksModel.Subscribe(OnPerkChanged));
 
-        OnHealthChanged(_session.Data.Hp.Value,0);
+        
+        OnPerkChanged();
+    }
+
+    private void OnPerkChanged()
+    {
+        var usedPerkId = _session.PerksModel.Used;
+        var hasPerk = !string.IsNullOrEmpty(usedPerkId);
+        if (hasPerk)
+        {
+            var perkDef = DefsFacade.I.Perks.Get(usedPerkId);
+            _currentPerk.Set(perkDef);
+        }
+        _currentPerk.gameObject.SetActive(hasPerk);
     }
 
     private void OnHealthChanged(int newValue, int oldValue)
@@ -29,6 +45,7 @@ public class HUDController : MonoBehaviour
     }
     private void OnDestroy()
     {
+        _trash.Dispose();  
         _session.Data.Hp.OnChanged -= OnHealthChanged;
     }
 }

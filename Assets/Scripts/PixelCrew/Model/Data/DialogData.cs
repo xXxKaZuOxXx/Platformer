@@ -5,16 +5,33 @@ using UnityEditor;
 using UnityEngine;
 
 [Serializable]
-public class DialogData
+public struct DialogData
 {
-    [SerializeField] public string[] _sentences;
+    [SerializeField] public Sentense[] _sentences;
+    [SerializeField] private DialogType _type;
     [SerializeField] public string[] _localisationKeys;
 
-    public string[] Sentences => _sentences;
-    
-    //сделать скрипт с локализацие текста из кода получать компонент для bounds/sentences по ключу
-    //смотреть если 0 ключ существет то заменяем 0 sentence. Для external делаем также
-    
+    public Sentense [] Sentences => _sentences;
+    public DialogType Type => _type;
 
-
+}
+[Serializable]
+public struct Sentense
+{
+    [SerializeField] public string _value;
+    [SerializeField] private Sprite _icon;
+    [SerializeField] private Side _side;
+    public string Value => _value;
+    public Sprite Icon => _icon;
+    public Side Side => _side;
+}
+public enum Side
+{
+    Left,
+    Right
+}
+public enum DialogType
+{
+    Simple,
+    Personalized
 }

@@ -2,11 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class DialogBoxController : MonoBehaviour
 {
-    [SerializeField] private Text _text;
+    
     [SerializeField] private GameObject _container;
     [SerializeField] private Animator _animator;
 
@@ -20,32 +21,43 @@ public class DialogBoxController : MonoBehaviour
     [SerializeField] private AudioClip _open;
     [SerializeField] private AudioClip _close;
 
+    [Space]
+    [SerializeField] protected DialogContent _content;
+    
+    [Space]
+
     private DialogData _data;
     private int _currentSentence;
+    private UnityEvent _onComplete;
     private AudioSource _sfxSource;
     private Coroutine _typingCoroutine;
+
+    protected Sentense CurrentSentence => _data.Sentences[_currentSentence];
+    protected virtual DialogContent CurrentContent => _content;
 
     private void Start()
     {
         _sfxSource = AudioUtils.FindSfxSource();
     }
-    public void ShowDialog(DialogData data)
+    public void ShowDialog(DialogData data, UnityEvent onComplete)
     {
+        _onComplete =  onComplete;
         _data = data;
         _currentSentence = 0;
-        _text.text = string.Empty;
+        CurrentContent.Text.text = string.Empty;
 
         _container.SetActive(true);
         _sfxSource.PlayOneShot(_open);
         _animator.SetBool(IsOpen, true);
     }
+    
     public void OnSkip()
     {
         if (_typingCoroutine == null)
             return;
 
         StopTypeAnimation();
-        _text.text = _data.Sentences[_currentSentence];
+        CurrentContent.Text.text = _data.Sentences[_currentSentence].Value;
     }
 
     private void StopTypeAnimation()
@@ -65,6 +77,7 @@ public class DialogBoxController : MonoBehaviour
         if(isDialogComplete)
         {
             HideDialogBox();
+            _onComplete?.Invoke();
         }
         else
         {
@@ -78,18 +91,19 @@ public class DialogBoxController : MonoBehaviour
         _sfxSource?.PlayOneShot(_close);
     }
 
-    private void OnStartDialogAnimation()
+    protected virtual void OnStartDialogAnimation()
     {
         _typingCoroutine = StartCoroutine(TypeDialogText());
     }
 
     private IEnumerator TypeDialogText()
     {
-        _text.text = string.Empty;
-        var sentenses = _data.Sentences[_currentSentence];
-        foreach (var sent in sentenses)
+        CurrentContent.Text.text = string.Empty;
+        var sentenses = CurrentSentence;
+        CurrentContent.TrySetIcon(sentenses.Icon);
+        foreach (var sent in sentenses.Value)
         {
-            _text.text += sent;
+            CurrentContent.Text.text += sent;
             _sfxSource?.PlayOneShot(_typing);
             yield return new WaitForSeconds(_textSpeed);
         }

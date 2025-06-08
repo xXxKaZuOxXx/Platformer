@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class DataGroup<TDataType, TItemType> where TItemType : MonoBehaviour, IItemRenderer<TDataType>
 {
-    private readonly List<TItemType> _createdItems = new List<TItemType>();
+    protected readonly List<TItemType> CreatedItems = new List<TItemType>();
     private readonly TItemType _prefab;
     private readonly Transform _container;
     public DataGroup(TItemType prefab, Transform container)
@@ -14,25 +14,25 @@ public class DataGroup<TDataType, TItemType> where TItemType : MonoBehaviour, II
         _prefab = prefab;
         _container = container; 
     }
-    public void SetData(IList<TDataType> data)
+    public virtual void SetData(IList<TDataType> data)
     {
 
         //create
-        for (var i = _createdItems.Count; i < data.Count; i++)
+        for (var i = CreatedItems.Count; i < data.Count; i++)
         {
             var item = Object.Instantiate(_prefab, _container);
-            _createdItems.Add(item);
+            CreatedItems.Add(item);
         }
         //update
         for (int i = 0; i < data.Count; i++)
         {
-            _createdItems[i].SetData(data[i], i);
-            _createdItems[i].gameObject.SetActive(true);
+            CreatedItems[i].SetData(data[i], i);
+            CreatedItems[i].gameObject.SetActive(true);
         }
         //hide
-        for (int i = data.Count; i < _createdItems.Count; i++)
+        for (int i = data.Count; i < CreatedItems.Count; i++)
         {
-            _createdItems[i].gameObject.SetActive(false);
+            CreatedItems[i].gameObject.SetActive(false);
         }
     }
     

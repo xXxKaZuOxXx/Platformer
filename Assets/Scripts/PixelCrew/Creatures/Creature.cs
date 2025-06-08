@@ -51,7 +51,7 @@ namespace PixelCrew.Creatures
         protected virtual void FixedUpdate()
         {
             //SpawnFallDust();
-            var xVelocity = Direction.x * _speed;
+            var xVelocity = CalculateXVelocity();
             var yVelocity = CalculateVelocity();
             Rigidbody.velocity = new Vector2(xVelocity, yVelocity);
 
@@ -59,6 +59,14 @@ namespace PixelCrew.Creatures
             Animator.SetFloat(Verticalvelocity, Rigidbody.velocity.y);
             Animator.SetBool(Isrunning, Direction.x != 0);
             UpdateSpriteDirection(Direction);
+        }
+        protected virtual float CalculateXVelocity()
+        {
+            return Direction.x * CalculateSpeed();
+        }
+        protected virtual float CalculateSpeed()
+        {
+            return _speed;
         }
         protected virtual float CalculateVelocity()
         {

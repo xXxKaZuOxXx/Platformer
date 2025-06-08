@@ -15,6 +15,7 @@ namespace PixelCrew.Model
         [SerializeField] private string _defaultCheckPoint;
 
         public QuickInventoryModel QuickInventory { get; private set; }
+        public PerksModel PerksModel { get; private set; }
 
         private readonly CompositeDisposable _trash = new CompositeDisposable();
 
@@ -77,7 +78,11 @@ namespace PixelCrew.Model
         {
             QuickInventory = new QuickInventoryModel(Data);
             _trash.Retain(QuickInventory);
-            
+
+            PerksModel = new PerksModel(Data);
+            _trash.Retain(PerksModel);
+
+
         }
 
         private void LoadHud()
@@ -116,6 +121,20 @@ namespace PixelCrew.Model
             }
                
         }
+        public List<string> _removedItems = new List<string>();
+        public bool RestoreState(string itemId)
+        {
+            return _removedItems.Contains(itemId);
+            
+        }
+
+        public void StoreState(string itemId)
+        {
+            if(!_removedItems.Contains(itemId))
+                _removedItems.Add(itemId);
+           
+        }
     }
+    
 }
 

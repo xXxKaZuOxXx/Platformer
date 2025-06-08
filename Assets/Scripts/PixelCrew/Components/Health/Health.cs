@@ -13,11 +13,21 @@ namespace PixelCrew.Components
         [SerializeField] private UnityEvent _onDamage;
         [SerializeField] public UnityEvent _onDie;
         [SerializeField] public HealthChangeEvent _onChange;
+        [SerializeField] private bool _immune;
         private bool dead = false;
         public int HealthValue { get { return _health; } }
 
+        public bool Immune
+        {
+            get { return _immune; }
+            set { _immune = value; }
+        }
+
         public void ApplyDamage(int damageValue)
         {
+            if (damageValue > 0 && Immune)
+                return;
+
             _health -= damageValue;
             _onChange?.Invoke(_health);
             if (_health <= 0 && !dead)
