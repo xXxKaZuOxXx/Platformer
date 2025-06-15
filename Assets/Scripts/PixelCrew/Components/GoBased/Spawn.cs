@@ -14,13 +14,17 @@ namespace PixelCrew.Components
         [ContextMenu("SpawnTarget")]
         public void SpawnTarget()
         {
-            
+
+            SpawnInstance();
+        }
+        public GameObject SpawnInstance()
+        {
             var instantiate = Instantiate(_prefab, _target.position, Quaternion.identity);
-            var scale  = _target.lossyScale;
+            var scale = _target.lossyScale;
             scale.x *= _invertXScale ? -1 : 1;
             instantiate.transform.localScale = scale;
+            return instantiate;
         }
-
         internal void SetPrefab(GameObject prefab)
         {
             _prefab = prefab;

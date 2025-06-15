@@ -63,4 +63,14 @@ MonoBehaviour:
   - Key: Super Throw
     Value: "super-throw\r"
   - Key: Shield
-    Value: shield
+    Value: "shield\r"
+  - Key: Health
+    Value: "Health\r"
+  - Key: Speed
+    Value: "Speed\r"
+  - Key: Range Damage
+    Value: "Range Damage\r"
+  - Key: upgrade_button
+    Value: "upgrade\r"
+  - Key: Crit Damage
+    Value: 

@@ -17,7 +17,7 @@ namespace PixelCrew.Creatures
         [Header("Checkers")]
         [SerializeField] protected LayerMask GroundLayer;
         [SerializeField] private LayerCheck _groundCheck;
-        [SerializeField] private CheckCircleOverlap _attackRange;
+        [SerializeField] protected CheckCircleOverlap _attackRange;
         [SerializeField] protected SpawnListComponent Particles;
 
         protected Vector2 Direction;
@@ -135,9 +135,11 @@ namespace PixelCrew.Creatures
             Animator.SetTrigger(attack);
             Sounds.Play("Melee");
         }
-        private void OnAttack()
+        public virtual void OnAttack()
         {
             Particles.Spawn("Attack1");
+            
+
             _attackRange.Check();
             
         }

@@ -111,6 +111,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\Model\Data\GameSettings.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Data\IcanAddInInventory.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Data\InventoryData.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Data\LevelData.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Data\PerksData.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Data\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Data\Properties\FloatPersistentProperty.cs" />
@@ -126,6 +127,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\IHaveId.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\Localisation\LocalDef.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\Localisation\LocalisationManager.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\Player\StatDef.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\PlayerDef.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\Repositiories\DefRepository.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\Repositiories\Items\InventoryIdAttribute.cs" />
@@ -137,6 +139,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\Model\GameSession.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Models\PerksModel.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Models\QuickInventoryModel.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Models\StatsModel.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\SpriteAnimation.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\HUD\CurrentPerkWidget.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\HUD\Dialogs\DialogBoxController.cs" />
@@ -166,6 +169,8 @@
     <Compile Include="Assets\Scripts\PixelCrew\UI\Windows\MainMenu\MainMenuWindow.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Windows\PerkWindow\ManagePerksWindow.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Windows\PerkWindow\PerkWidget.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\Windows\PlayerStats\PlayerStatsWindow.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\Windows\PlayerStats\StatWidget.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Windows\Settings\SettingsWindow.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\AudioUtils.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\CheatController.cs" />

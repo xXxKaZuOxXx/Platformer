@@ -6,6 +6,7 @@ using PixelCrew.Utils;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
@@ -30,6 +31,7 @@ public class Hero : Creature, IcanAddInInventory
     [SerializeField] private ParticleSystem _hitParticles;
 
     private GameSession _session;
+    private Health _health;
     private float _defaultGravityScale;
 
     private bool _allowDoubleJump;
@@ -86,12 +88,26 @@ public class Hero : Creature, IcanAddInInventory
     {
        
         _session = FindObjectOfType<GameSession>();
-        var health = GetComponent<Health>();
+        _health = GetComponent<Health>();
         _session.Data.Inventory.OnChanged += OnInventoryChanged;
-        health.SetHealth(_session.Data.Hp.Value);
+        _session.StatsModel.OnUpgraded += OnHeroUpgraded;
+        _health.SetHealth(_session.Data.Hp.Value);
         UpdateHeroWeapon();
 
     }
+
+    private void OnHeroUpgraded(StatId state)
+    {
+        switch (state)
+        {
+            case StatId.Hp:
+                var health = (int)_session.StatsModel.GetValue(state);
+                _session.Data.Hp.Value = health;
+                _health.SetHealth(health);
+                break;
+        }
+    }
+
     private void OnInventoryChanged(string id, int value)
     {
         if (id == SwordId)
@@ -202,6 +218,15 @@ public class Hero : Creature, IcanAddInInventory
         base.Attack();
 
     }
+    public override void OnAttack()
+    {
+        Particles.Spawn("Attack1");
+        var damage = _attackRange.GetComponent<Damage>();
+        var damageValue = (int)_session.StatsModel.GetValue(StatId.RangeDamage);
+        damageValue = ModifyDamageCrit(damageValue);
+        damage.SetDelta(damageValue);
+        _attackRange.Check();
+    }
 
     public void DoHeal()
     {
@@ -237,8 +262,32 @@ public class Hero : Creature, IcanAddInInventory
         var throwableId = _session.QuickInventory.SelectedItem.Id;
         var throwableDef = DefsFacade.I.Throwable.Get(throwableId);
         _throwSpawner.SetPrefab(throwableDef.Projectile);
-        _throwSpawner.SpawnTarget();
+        var instance = _throwSpawner.SpawnInstance();
+        ApplyRangeDamageStat(instance);
+
+
         _session.Data.Inventory.Remove(throwableId, 1);
+    }
+
+    private void ApplyRangeDamageStat(GameObject projectile)
+    {
+        var damage = projectile.GetComponent<Damage>();
+        var damageValue = (int)_session.StatsModel.GetValue(StatId.RangeDamage);
+        damageValue = ModifyDamageCrit(damageValue);
+        damage.SetDelta(damageValue);
+    }
+    private int ModifyDamageCrit(int damage)
+    {
+        var critChanse = _session.StatsModel.GetValue(StatId.CriticalDamage);
+        System.Random random = new System.Random();
+        if (random.Next(100) <= critChanse)
+        {
+            return damage * 2;
+        }
+        else
+        {
+            return damage;
+        }
     }
     public void UseInventory(bool triple)
     {
@@ -282,7 +331,8 @@ public class Hero : Creature, IcanAddInInventory
         if (_speedUpCooldown.IsReady)
             _additionalSpeed = 0f;
 
-        return base.CalculateSpeed() + _additionalSpeed; 
+        float defaultSpeed = _session.StatsModel.GetValue(StatId.Speed);
+        return defaultSpeed + _additionalSpeed; 
     }
     private bool IsSelectedItem(ItemTag tag)
     {

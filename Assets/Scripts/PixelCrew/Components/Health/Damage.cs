@@ -7,6 +7,11 @@ namespace PixelCrew.Components
     public class Damage : MonoBehaviour
     {
         [SerializeField] private int _damage;
+
+        public void SetDelta(int delta)
+        {
+            _damage = delta;
+        }
         public void ApplyDamage(GameObject target)
         {
             var health = target.GetComponent<Health>();

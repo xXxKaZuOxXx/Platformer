@@ -12,6 +12,7 @@ namespace PixelCrew.Model
         
         public PerksData Perks = new PerksData();
         public IntProperty Hp = new IntProperty();
+        public LevelData Levels = new LevelData();
 
         public InventoryData Inventory => _inventory;
 
