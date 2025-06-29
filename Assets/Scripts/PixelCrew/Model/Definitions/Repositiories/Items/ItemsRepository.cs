@@ -32,6 +32,7 @@ public struct ItemDef: IHaveId
     [SerializeField] private string _id;
     [SerializeField] private ItemTag[] _tags;
     [SerializeField] private Sprite _icon;
+    
     public string Id => _id;
     
     public bool IsVoid => string.IsNullOrEmpty(_id);

@@ -73,4 +73,6 @@ MonoBehaviour:
   - Key: upgrade_button
     Value: "upgrade\r"
   - Key: Crit Damage
-    Value: 
+    Value: "Crit Damage\r"
+  - Key: Dash
+    Value: Dash

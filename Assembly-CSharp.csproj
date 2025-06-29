@@ -135,10 +135,12 @@
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\Repositiories\Items\ItemsRepository.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\Repositiories\PerkRepository.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\Repositiories\PoitionRepository.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\Repositiories\ShopRepository.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Definitions\Repositiories\ThrowableRepository.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\GameSession.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Models\PerksModel.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Models\QuickInventoryModel.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Model\Models\ShopModel.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Model\Models\StatsModel.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\SpriteAnimation.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\HUD\CurrentPerkWidget.cs" />
@@ -172,6 +174,8 @@
     <Compile Include="Assets\Scripts\PixelCrew\UI\Windows\PlayerStats\PlayerStatsWindow.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Windows\PlayerStats\StatWidget.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Windows\Settings\SettingsWindow.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\Windows\ShopWindow\ShopWidget.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\Windows\ShopWindow\ShopWindow.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\AudioUtils.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\CheatController.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\Cooldown.cs" />

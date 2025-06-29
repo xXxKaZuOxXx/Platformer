@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using PixelCrew.Model;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -7,14 +8,52 @@ public class HeroInputReader : MonoBehaviour
 {
     [SerializeField]private Hero _hero;
     private float _startTime = 0;
-     private float _holdDuration = 0;
+    private float _holdDuration = 0;
+    private float _firstClickTime;
+    private bool _isFirstClick;
 
-
+    private GameSession _session;
+    private void Start()
+    {
+        _session = FindObjectOfType<GameSession>();
+    }
 
     public void WASD(InputAction.CallbackContext context)
     {
         var direction = context.ReadValue<Vector2>();
-        _hero.SetDirection(direction);
+        if (_isFirstClick && (Time.time - _firstClickTime > 0.5f))
+        {
+            _isFirstClick = false;
+        }
+        if (context.started && (direction == Vector2.left || direction == Vector2.right))
+        {
+            if(!_isFirstClick)
+            {
+                _firstClickTime = Time.time;
+                _isFirstClick = true;
+            }
+            else 
+            {
+                float timeBetweenClicks = Time.time - _firstClickTime;
+                if(timeBetweenClicks <= 0.5 && _session.PerksModel.IsDashSupported)
+                {
+                    _hero.OnDash();
+                    Debug.Log("DO");
+                }
+                Debug.Log(timeBetweenClicks);
+                _isFirstClick = false;
+            }
+           
+            // Debug.Log(_startTime);
+
+        }
+        else
+        {
+            _hero.SetDirection(direction);
+            
+        }
+
+            
     }
     public void OnVerticalMovement(InputAction.CallbackContext context)
     {

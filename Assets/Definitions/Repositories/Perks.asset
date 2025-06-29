@@ -34,3 +34,10 @@ MonoBehaviour:
       _itemId: GreenGem
       _count: 10
     _cooldown: 5
+  - _id: dash
+    _icon: {fileID: 21300000, guid: ee449a639137bfe4085d065bb41f1237, type: 3}
+    _info: Dash
+    _price:
+      _itemId: GreenGem
+      _count: 5
+    _cooldown: 3

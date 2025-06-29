@@ -33,6 +33,7 @@ public class Hero : Creature, IcanAddInInventory
     private GameSession _session;
     private Health _health;
     private float _defaultGravityScale;
+    public float dashPower = 1;
 
     private bool _allowDoubleJump;
     private bool _isOnWall;
@@ -95,7 +96,7 @@ public class Hero : Creature, IcanAddInInventory
         UpdateHeroWeapon();
 
     }
-
+    
     private void OnHeroUpgraded(StatId state)
     {
         switch (state)
@@ -122,7 +123,7 @@ public class Hero : Creature, IcanAddInInventory
     protected override void Update()
     {
         base.Update();
-
+       
         var moveToSameDirection = Direction.x * transform.lossyScale.x > 0;
         if (_wallCheck.IsTouchingLayer && moveToSameDirection)
         {
@@ -138,7 +139,7 @@ public class Hero : Creature, IcanAddInInventory
         Animator.SetBool(IsOnWall, _isOnWall);
     }
    
-
+    
     protected override float CalculateVelocity()
     {
         
@@ -373,4 +374,32 @@ public class Hero : Creature, IcanAddInInventory
     {
         _session.QuickInventory.SetNextItem();
     }
+    protected override float CalculateXVelocity()
+    {
+        Dash(DoDash);
+
+        return Direction.x * CalculateSpeed()* dashPower;
+    }
+
+    private void Dash(bool doDash)
+    {
+        if (!DoDash)
+        {
+            dashPower = 1;
+        }
+        if (DoDash && _session.PerksModel.IsDashSupported)
+        {
+            dashPower = 35;
+            _session.PerksModel.Cooldown.Reset();
+            DoDash = false;
+        }
+    }
+    public void OnDash()
+    {
+        DoDash = true;
+    }
+    public bool DoDash {  get;  set; }
+    
+
+    
 }

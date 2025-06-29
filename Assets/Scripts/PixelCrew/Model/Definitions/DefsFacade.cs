@@ -12,13 +12,14 @@ public class DefsFacade : ScriptableObject
     [SerializeField] private HealItemsDefinitions _healItems;
     [SerializeField] private PoitionRepository _poitions;
     [SerializeField] private PerkRepository _perks;
+    [SerializeField] private ShopRepository _shop;
 
     public ItemsRepository Items => _items;
     public PlayerDef PlayerDef => _playerDef;
     public PerkRepository Perks => _perks;
+    public ShopRepository Shop => _shop;
     public ThrowableRepository Throwable => _throwable;
     public HealItemsDefinitions HealItems => _healItems;
-
     public PoitionRepository Poitions => _poitions;
 
     private static DefsFacade _instance;

@@ -18,3 +18,4 @@ MonoBehaviour:
   _healItems: {fileID: 11400000, guid: 9d17c9d2ced171b438dcef9216144238, type: 2}
   _poitions: {fileID: 11400000, guid: 506dc4550b9e20d45969d442f805aa31, type: 2}
   _perks: {fileID: 11400000, guid: f39a5d1354d3a8b4282125f7ef55d35e, type: 2}
+  _shop: {fileID: 11400000, guid: 6a1a1b36abbe32c49b01c02a8676083c, type: 2}
