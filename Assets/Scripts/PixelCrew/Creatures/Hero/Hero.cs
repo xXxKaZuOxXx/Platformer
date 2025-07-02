@@ -25,6 +25,7 @@ public class Hero : Creature, IcanAddInInventory
     [SerializeField] private AnimatorController _unarmed;
     [SerializeField] private Spawn _throwSpawner;
     [SerializeField] private Shield _shield;
+    [SerializeField] private HeroFlashLight _flashlight;
 
     private static readonly int ThrowKey = Animator.StringToHash("throw");
     private static readonly int IsOnWall = Animator.StringToHash("IsOnWall");
@@ -400,6 +401,11 @@ public class Hero : Creature, IcanAddInInventory
     }
     public bool DoDash {  get;  set; }
     
+    public void ToggleFlashlight()
+    {
+        var isActtive = _flashlight.gameObject.activeSelf;
+        _flashlight.gameObject.SetActive(!isActtive);
 
+    }
     
 }

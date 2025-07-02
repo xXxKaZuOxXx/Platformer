@@ -137,5 +137,10 @@ public class HeroInputReader : MonoBehaviour
         if (callbackContext.canceled)
             _hero.UsePerk();
     }
+    public void OnToggleFlashlight(InputAction.CallbackContext callbackContext)
+    {
+        if(callbackContext.performed)
+            _hero.ToggleFlashlight();
+    }
 
 }

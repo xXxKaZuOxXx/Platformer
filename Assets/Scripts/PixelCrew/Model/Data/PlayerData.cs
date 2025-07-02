@@ -11,6 +11,7 @@ namespace PixelCrew.Model
         [SerializeField] private InventoryData _inventory;
         
         public PerksData Perks = new PerksData();
+        public FloatProperty Fuel = new FloatProperty();
         public IntProperty Hp = new IntProperty();
         public LevelData Levels = new LevelData();
 
