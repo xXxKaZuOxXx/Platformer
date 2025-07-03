@@ -106,6 +106,8 @@
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\BaseProjectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\Projectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\SinusoidalProjectile.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Effects\CameraRelated\BlooadSplashOverlay.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Effects\CameraRelated\CameraShakeEffect.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Effects\InfiniteBackground.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Effects\ParallaxEffect.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\FollowTarget.cs" />
@@ -155,6 +157,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\UI\HUD\HUDController.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\HUD\QuickInventory\InventoryItemWidget.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\HUD\QuickInventory\QuickInventoryController.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\LevelsLoader\LevelLoader.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Localisation\AbstractLocalizeComponent.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Localisation\LocaliseImage.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Localisation\LocaliseText.cs" />

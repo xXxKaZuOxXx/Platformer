@@ -17,7 +17,11 @@ public class MainMenuWindow : AnimatedWindow
     }
     public void OnStartGame()
     {
-        _closeAction = () => { SceneManager.LoadScene("Level1"); };
+        _closeAction = () => { 
+            var loader = FindObjectOfType<LevelLoader>();
+            loader.LoadLevel("Level1");
+            
+        };
         Close();
     }
 

@@ -5829,6 +5829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _consumePerSecond: 1
+  _light: {fileID: 8380939121232925564}
 --- !u!1 &8450774639073735713
 GameObject:
   m_ObjectHideFlags: 0

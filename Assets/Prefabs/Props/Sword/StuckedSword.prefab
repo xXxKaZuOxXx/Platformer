@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5581356850055525083}
   - component: {fileID: 7945181961068351072}
   - component: {fileID: -7593289895865836554}
-  - component: {fileID: -5438858311195225899}
   - component: {fileID: -5210646572855457664}
   m_Layer: 0
   m_Name: StuckedSword
@@ -126,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _objToDestroy: {fileID: 8801066872897357584}
+  _state: {fileID: 0}
 --- !u!50 &5581356850055525083
 Rigidbody2D:
   serializedVersion: 4
@@ -204,18 +204,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &-5438858311195225899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8801066872897357584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d4a34435e27eab4eb5b558976c581e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-5210646572855457664
 MonoBehaviour:
   m_ObjectHideFlags: 0

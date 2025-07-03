@@ -35,6 +35,8 @@ public class Hero : Creature, IcanAddInInventory
     private Health _health;
     private float _defaultGravityScale;
     public float dashPower = 1;
+    private CameraShakeEffect _cameraShake;
+
 
     private bool _allowDoubleJump;
     private bool _isOnWall;
@@ -94,6 +96,7 @@ public class Hero : Creature, IcanAddInInventory
         _session.Data.Inventory.OnChanged += OnInventoryChanged;
         _session.StatsModel.OnUpgraded += OnHeroUpgraded;
         _health.SetHealth(_session.Data.Hp.Value);
+        _cameraShake = FindObjectOfType<CameraShakeEffect>();
         UpdateHeroWeapon();
 
     }
@@ -178,6 +181,7 @@ public class Hero : Creature, IcanAddInInventory
     public override void TakeDamage()
     {
         base.TakeDamage();
+        _cameraShake.Shake();
        
         if (CoinsCount > 0)
         {
@@ -315,6 +319,7 @@ public class Hero : Creature, IcanAddInInventory
         {
             case Effect.AddHp:
                 _session.Data.Hp.Value += (int)potion.Value;
+                _health.ApplyDamage(-(int)potion.Value);
                 break;
             case Effect.SpeedUp:
                 _speedUpCooldown.Value = _speedUpCooldown.RemainingTime + potion.Time;
