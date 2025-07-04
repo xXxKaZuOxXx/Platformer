@@ -181,7 +181,10 @@ public class Hero : Creature, IcanAddInInventory
     public override void TakeDamage()
     {
         base.TakeDamage();
-        _cameraShake.Shake();
+        if (_cameraShake != null)
+        {
+            _cameraShake.Shake();
+        }
        
         if (CoinsCount > 0)
         {

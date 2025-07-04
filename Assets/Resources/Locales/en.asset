@@ -75,4 +75,12 @@ MonoBehaviour:
   - Key: Crit Damage
     Value: "Crit Damage\r"
   - Key: Dash
-    Value: Dash
+    Value: "Dash\r"
+  - Key: wrong_door1
+    Value: "Hey, pie buddy, you've chosen the wrong one.\r"
+  - Key: wrong_door2
+    Value: "Come on...\r"
+  - Key: wrong_door3
+    Value: "NOOOO!!!\r"
+  - Key: wrong_door4
+    Value: No luck, no luck

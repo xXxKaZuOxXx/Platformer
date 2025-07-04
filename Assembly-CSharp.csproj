@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\Components\Audio\AudioSetting.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Audio\PlaySfxSound.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Audio\PlaySounds.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\CameraStateController.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Collectables\AddFuelComponent.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Collectables\CircleMovement.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Collectables\Collector.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\Components\Dialogs\Localisation\LocilizeDialog.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Dialogs\ShowDialogComponent.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Dialogs\ShowOptionsComponent.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\GoBased\CircularProjectileSpawner.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\GoBased\DestroyObject.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\GoBased\Spawn.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\GoBased\SpawnCoins.cs" />
@@ -89,13 +91,19 @@
     <Compile Include="Assets\Scripts\PixelCrew\Components\OnDestroyAnimation.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\PlatformMove.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\RestoreStateComponent.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\ShowTargetComponent.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\ShowWindowComponent.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Teleport.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\TimerComponent.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Creature.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Hero\FIatures\HeroFlashLight.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Hero\Hero.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Hero\HeroInputReader.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Hero\Shield.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\BossNextStage.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\BossShootState.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\ChangeLightComponent.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\HealthAnimationGlue.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\MobAI.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Patrolling\Patrol.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Patrolling\PlatformPatrol.cs" />
@@ -104,6 +112,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\ShootingTrapAI.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\TotemsAI.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\BaseProjectile.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\DirectionalProjectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\Projectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Weapons\SinusoidalProjectile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Effects\CameraRelated\BlooadSplashOverlay.cs" />
@@ -163,6 +172,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\UI\Localisation\LocaliseText.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Localisation\LocalosePerkInfo.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Widgets\AudioSettingsWidget.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\UI\Widgets\BossHpWidget.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Widgets\ButtonSound.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Widgets\CustomButton.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\UI\Widgets\DataGroup.cs" />
@@ -191,6 +201,8 @@
     <Compile Include="Assets\Scripts\PixelCrew\Utils\GameObjectExtension.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\GizmoUtils.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\HandlesUtils.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Utils\LerpAnimatedUtils.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Utils\SpawnUtils.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\WindowUtils.cs" />
     <Compile Include="Assets\UserInput\HEroInputAction.cs" />
   </ItemGroup>
