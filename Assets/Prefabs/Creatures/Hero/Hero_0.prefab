@@ -5157,6 +5157,7 @@ GameObject:
   - component: {fileID: -2913726735899319672}
   - component: {fileID: 1716619734}
   - component: {fileID: 5690881064570615927}
+  - component: {fileID: 2371908946307422093}
   m_Layer: 13
   m_Name: Hero_0
   m_TagString: Player
@@ -5503,7 +5504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34cee34126624e4e9d8ebc078b6651e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 10
   _onDamage:
     m_PersistentCalls:
       m_Calls:
@@ -5557,7 +5558,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _immune: 0
 --- !u!95 &592649089048374390
 Animator:
   serializedVersion: 3
@@ -5633,6 +5633,19 @@ MonoBehaviour:
     _clip: {fileID: 8300000, guid: 2b7da20d9469549469130eed247fd347, type: 3}
   - _id: Hurt
     _clip: {fileID: 8300000, guid: 1ff1d9605607ca9498e222795059498a, type: 3}
+--- !u!114 &2371908946307422093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592649089048374398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc723493df09a6044b7389fd2a75b356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _immuneTime: 1
 --- !u!1 &8380939121232925566
 GameObject:
   m_ObjectHideFlags: 0
@@ -5723,7 +5736,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8380939122428502713
 Transform:
   m_ObjectHideFlags: 0

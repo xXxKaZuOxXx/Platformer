@@ -10,22 +10,19 @@ namespace PixelCrew.Components
     public class Health : MonoBehaviour
     {
         [SerializeField] private int _health;
-        [SerializeField] private UnityEvent _onDamage;
+        [SerializeField] public UnityEvent _onDamage;
         [SerializeField] public UnityEvent _onDie;
         [SerializeField] public HealthChangeEvent _onChange;
-        [SerializeField] private bool _immune;
+        private Lock _immune = new Lock();
         private bool dead = false;
         public int HealthValue { get { return _health; } }
 
-        public bool Immune
-        {
-            get { return _immune; }
-            set { _immune = value; }
-        }
+        public Lock Immune => _immune; 
+        
 
         public void ApplyDamage(int damageValue)
         {
-            if (damageValue > 0 && Immune)
+            if (damageValue > 0 && Immune.IsLocked)
                 return;
 
             _health -= damageValue;

@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\Components\GoBased\SwitchPrefab.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Health\Damage.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Health\Health.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\Health\ImmuneAfterHit.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Interactions\DoInteraction.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Interactions\Interactive.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\Interactions\RequireItem.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\Components\Movements\VerticalLevitation.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\OnDestroyAnimation.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\PlatformMove.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Components\PostEffects\NewPostEffectProfile.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\RestoreStateComponent.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\ShowTargetComponent.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Components\ShowWindowComponent.cs" />
@@ -99,10 +101,13 @@
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Hero\FIatures\HeroFlashLight.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Hero\Hero.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Hero\HeroInputReader.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Hero\InputEnableComponent.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Hero\Shield.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\BossFloodState.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\BossNextStage.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\BossShootState.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\ChangeLightComponent.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\FloodController.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\HealthAnimationGlue.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\MobAI.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Patrolling\Patrol.cs" />
@@ -202,6 +207,7 @@
     <Compile Include="Assets\Scripts\PixelCrew\Utils\GizmoUtils.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\HandlesUtils.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\LerpAnimatedUtils.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Utils\Lock.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\SpawnUtils.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Utils\WindowUtils.cs" />
     <Compile Include="Assets\UserInput\HEroInputAction.cs" />
