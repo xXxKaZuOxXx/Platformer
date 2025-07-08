@@ -8,7 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEditor;
-using UnityEditor.Animations;
+//using UnityEditor.Animations;
 using UnityEngine;
 
 public class Hero : Creature, IcanAddInInventory
@@ -21,8 +21,8 @@ public class Hero : Creature, IcanAddInInventory
     [SerializeField] private LayerCheck _wallCheck;
 
     [SerializeField] private Cooldown _throwCooldown;
-    [SerializeField] private AnimatorController _armed;
-    [SerializeField] private AnimatorController _unarmed;
+    [SerializeField] private RuntimeAnimatorController _armed;
+    [SerializeField] private RuntimeAnimatorController _unarmed;
     [SerializeField] private Spawn _throwSpawner;
     [SerializeField] private Shield _shield;
     [SerializeField] private HeroFlashLight _flashlight;

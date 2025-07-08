@@ -3,7 +3,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -36,13 +35,16 @@ namespace PixelCrew
                 
             }
         }
+#if UNITY_EDITOR
 
         private void OnDrawGizmosSelected()
         {
-            Handles.color = HandlesUtils.TransparentRed;
-            Handles.DrawSolidDisc(transform.position, Vector3.forward, _radius); 
+            UnityEditor.Handles.color = HandlesUtils.TransparentRed;
+            UnityEditor.Handles.DrawSolidDisc(transform.position, Vector3.forward, _radius); 
         }
+#endif
     }
+
     [Serializable]
 
     public class OnOverlapEvent: UnityEvent<GameObject>

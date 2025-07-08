@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -59,7 +60,7 @@ namespace PixelCrew.Model
         private void StartSession(string defaultCheckPoint)
         {
             SetChecked(defaultCheckPoint);
-            LoadHud();
+            LoadUIs();
             SpawnHero();
         }
 
@@ -93,9 +94,15 @@ namespace PixelCrew.Model
             _data.Hp.Value = (int)StatsModel.GetValue(StatId.Hp);
         }
 
-        private void LoadHud()
+        private void LoadUIs()
         {
            SceneManager.LoadScene("HUD",LoadSceneMode.Additive);
+            LoadScreenControls();
+        }
+        [Conditional("USE_ONSCREEN_CONTROLS")]
+        private void LoadScreenControls()
+        {
+            SceneManager.LoadScene("Controls", LoadSceneMode.Additive);
         }
 
         private GameSession GetExistsSession()
