@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Profiling;
 
 namespace PixelCrew.Creatures
 {
@@ -62,6 +63,7 @@ namespace PixelCrew.Creatures
         }
         protected virtual float CalculateXVelocity()
         {
+
             return Direction.x * CalculateSpeed();
         }
         protected virtual float CalculateSpeed()
@@ -106,7 +108,9 @@ namespace PixelCrew.Creatures
 
         protected void DoJumpVfx()
         {
+            Profiler.BeginSample("JumpVFXSample");
             Particles.Spawn("Jump");
+            Profiler.EndSample();
             Sounds.Play("Jump");
         }
 

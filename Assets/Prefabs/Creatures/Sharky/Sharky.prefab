@@ -110,6 +110,7 @@ MonoBehaviour:
   _target: {fileID: 592649087786985551}
   _prefab: {fileID: 1477218382098562851, guid: 8e692ed336b1476439aa5beaa9787acc, type: 3}
   _invertXScale: 0
+  _usePool: 1
 --- !u!1 &592649088082894703
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,6 +268,7 @@ MonoBehaviour:
   _target: {fileID: 592649088110358402}
   _prefab: {fileID: 6127582911982982285, guid: 9ad6ade86537a71468e4d76e47c678d6, type: 3}
   _invertXScale: 0
+  _usePool: 0
 --- !u!1 &592649088654830507
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +315,7 @@ MonoBehaviour:
   _target: {fileID: 592649088654830506}
   _prefab: {fileID: 1722215457920806636, guid: dddd9eba311be0344abe99d098c62816, type: 3}
   _invertXScale: 1
+  _usePool: 1
 --- !u!1 &592649089048374398
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +520,6 @@ MonoBehaviour:
   _onChange:
     m_PersistentCalls:
       m_Calls: []
-  _immune: 0
 --- !u!95 &592649089048374390
 Animator:
   serializedVersion: 3
@@ -1127,6 +1129,7 @@ MonoBehaviour:
   _target: {fileID: 7281378065208914910}
   _prefab: {fileID: 1722215457920806636, guid: 7b8687ef49897094ea4750e185a7753f, type: 3}
   _invertXScale: 0
+  _usePool: 1
 --- !u!1 &7831540100139605285
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1176,7 @@ MonoBehaviour:
   _target: {fileID: 5329417227501315075}
   _prefab: {fileID: 6127582911982982285, guid: bb958df49dbde9d47b182e5fd14f0781, type: 3}
   _invertXScale: 0
+  _usePool: 1
 --- !u!1 &8566531005842147611
 GameObject:
   m_ObjectHideFlags: 0
