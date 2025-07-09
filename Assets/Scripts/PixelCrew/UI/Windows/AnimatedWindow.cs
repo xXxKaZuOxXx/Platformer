@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class AnimatedWindow : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class AnimatedWindow : MonoBehaviour
     private static readonly int Hide = Animator.StringToHash("Hide");
     protected virtual void Start()
     {
+        AnalyticsEvent.ScreenVisit(gameObject.name);
         _animator = GetComponent<Animator>();
 
         _animator.SetTrigger(Show);

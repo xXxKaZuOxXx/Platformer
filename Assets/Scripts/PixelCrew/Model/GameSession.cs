@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
 
 namespace PixelCrew.Model
 {
     public class GameSession : MonoBehaviour
     {
+        [SerializeField] private int _levelIndex;
         [SerializeField] private PlayerData _data;
         public PlayerData Data => _data;
         private PlayerData _save;
@@ -45,7 +47,7 @@ namespace PixelCrew.Model
             var existsSession = GetExistsSession();
             if(existsSession != null)
             {
-                existsSession.StartSession(_defaultCheckPoint);
+                existsSession.StartSession(_defaultCheckPoint, _levelIndex);
                 DestroyImmediate(gameObject);
             }
             else
@@ -53,15 +55,26 @@ namespace PixelCrew.Model
                 Save();
                 InitModels();
                 DontDestroyOnLoad(this);
-                StartSession(_defaultCheckPoint);
+                StartSession(_defaultCheckPoint, _levelIndex);
             }
         }
 
-        private void StartSession(string defaultCheckPoint)
+        private void StartSession(string defaultCheckPoint, int levelIndex)
         {
             SetChecked(defaultCheckPoint);
+            TrackSessionStart(levelIndex);
+
             LoadUIs();
             SpawnHero();
+        }
+
+        private void TrackSessionStart(int levelIndex)
+        {
+            IDictionary<string, object> eventParms = new Dictionary<string, object>
+            {
+                { "level_index", levelIndex}
+            };
+            AnalyticsEvent.Custom("level_start", eventParms);
         }
 
         private void SpawnHero()

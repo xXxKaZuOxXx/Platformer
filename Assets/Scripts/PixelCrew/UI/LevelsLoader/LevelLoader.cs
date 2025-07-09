@@ -2,10 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
+    
     [SerializeField] private Animator _animator;
     [SerializeField] private float _transitionTime;
 
@@ -15,6 +17,7 @@ public class LevelLoader : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     static void OnAfterSceneLoad()
     {
+        AnalyticsEvent.debugMode = true;
         InitLoader();
     }
     
