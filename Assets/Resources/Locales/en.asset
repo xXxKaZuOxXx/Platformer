@@ -77,10 +77,20 @@ MonoBehaviour:
   - Key: Dash
     Value: "Dash\r"
   - Key: wrong_door1
-    Value: "Hey, pie buddy, you've chosen the wrong one.\r"
+    Value: "Hey, pie buddy, you've chosen the wrong door.\r"
   - Key: wrong_door2
     Value: "Come on...\r"
   - Key: wrong_door3
     Value: "NOOOO!!!\r"
   - Key: wrong_door4
-    Value: No luck, no luck
+    Value: "No luck, no luck\r"
+  - Key: final_boss1
+    Value: "Did you think this was the end? hahaha\r"
+  - Key: final_boss2
+    Value: "Oh...\r"
+  - Key: final_boss3
+    Value: "For what?!?!?\r"
+  - Key: final_boss4
+    Value: "For the sake of treasure\r"
+  - Key: Ultra Power
+    Value: Ultra Power

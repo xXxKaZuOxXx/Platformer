@@ -310,6 +310,17 @@
                 },
                 {
                     "name": "",
+                    "id": "b2322866-2955-4195-9826-dd6ff182e687",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "heal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "ee2bc130-65ac-4326-8bab-1dcebff8aa87",
                     "path": "<Keyboard>/r",
                     "interactions": "",
@@ -321,8 +332,30 @@
                 },
                 {
                     "name": "",
+                    "id": "9a54ebef-2622-4d11-8cee-109ed27c279b",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UsePerk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "d57fc726-1085-4738-9890-1b07ad6dea8d",
                     "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseFlashlight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e358bb4f-5090-4aaa-a986-6466baca68fe",
+                    "path": "<Gamepad>/dpad/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

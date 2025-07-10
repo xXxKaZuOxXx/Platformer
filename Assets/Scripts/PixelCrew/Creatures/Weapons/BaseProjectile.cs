@@ -20,7 +20,7 @@ public class BaseProjectile : MonoBehaviour
 
     private IEnumerator TimeOfLife()
     {
-        yield return new WaitForSeconds(9);
+        yield return new WaitForSeconds(12);
         Destroy(Rigidbody.gameObject);
         yield break;
     }

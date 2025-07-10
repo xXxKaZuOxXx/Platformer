@@ -78,8 +78,9 @@ namespace PixelCrew.Creatures
             _creature.SetDirection(Vector2.zero);
             _particles.Spawn("Miss");
             yield return new WaitForSeconds(_missCooldown);
+            if(!_isDead)
+               StartState(_patrol.DoPatrol());
 
-            StartState(_patrol.DoPatrol());
 
         }
 
@@ -127,7 +128,9 @@ namespace PixelCrew.Creatures
             if (_current != null)
             {
                 StopCoroutine(_current);
+                _creature.SetDirection(Vector2.zero);
             }
+            _creature.SetDirection(Vector2.zero);
         }
     }
 }

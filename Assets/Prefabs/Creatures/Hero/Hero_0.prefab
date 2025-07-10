@@ -5162,6 +5162,7 @@ GameObject:
   - component: {fileID: 1716619734}
   - component: {fileID: 5690881064570615927}
   - component: {fileID: 2371908946307422093}
+  - component: {fileID: 829851554784478420}
   m_Layer: 13
   m_Name: Hero_0
   m_TagString: Player
@@ -5260,7 +5261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _invertScale: 0
   _speed: 3
-  JumpSpeed: 15
+  JumpSpeed: 17
   _damageVelocity: 10
   GroundLayer:
     serializedVersion: 2
@@ -5650,6 +5651,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _immuneTime: 1
+--- !u!114 &829851554784478420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592649089048374398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5a47ccd0ad01842889f190d2d675ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cooldown:
+    _value: 7
+  _damage: {fileID: 957924119554728031}
 --- !u!1 &8380939121232925566
 GameObject:
   m_ObjectHideFlags: 0
@@ -5794,7 +5810,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 5e486826765a10f468dac20499166f79, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

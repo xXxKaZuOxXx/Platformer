@@ -41,3 +41,10 @@ MonoBehaviour:
       _itemId: GreenGem
       _count: 5
     _cooldown: 3
+  - _id: ultra-power
+    _icon: {fileID: 21300000, guid: ec700e01e246e394ba9013b38ea27f89, type: 3}
+    _info: Ultra Power
+    _price:
+      _itemId: GreenGem
+      _count: 10
+    _cooldown: 10

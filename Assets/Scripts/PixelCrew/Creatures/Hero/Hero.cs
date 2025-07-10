@@ -36,6 +36,8 @@ public class Hero : Creature, IcanAddInInventory
     private float _defaultGravityScale;
     public float dashPower = 1;
     private CameraShakeEffect _cameraShake;
+    private Damage _damage;
+    private UltraDamage _ultraDamage;
 
 
     private bool _allowDoubleJump;
@@ -71,9 +73,15 @@ public class Hero : Creature, IcanAddInInventory
     }
     public void UsePerk()
     {
-        if(_session.PerksModel.IsShieldSupported)
+        if (_session.PerksModel.IsShieldSupported)
         {
             _shield.Use();
+            _session.PerksModel.Cooldown.Reset();
+        }
+        else if (_session.PerksModel.IsUltraPowerSupported)
+        {
+            _ultraDamage.Use();
+            // дописать зависимости
             _session.PerksModel.Cooldown.Reset();
         }
     }
@@ -93,6 +101,8 @@ public class Hero : Creature, IcanAddInInventory
        
         _session = FindObjectOfType<GameSession>();
         _health = GetComponent<Health>();
+        _ultraDamage = GetComponent<UltraDamage>();
+        _damage = GetComponentInChildren<Damage>();
         _session.Data.Inventory.OnChanged += OnInventoryChanged;
         _session.StatsModel.OnUpgraded += OnHeroUpgraded;
         _health.SetHealth(_session.Data.Hp.Value);
@@ -231,7 +241,8 @@ public class Hero : Creature, IcanAddInInventory
     {
         Particles.Spawn("Attack1");
         var damage = _attackRange.GetComponent<Damage>();
-        var damageValue = (int)_session.StatsModel.GetValue(StatId.RangeDamage);
+        var damageValue = damage.DamageValue;
+        //var damageValue = (int)_session.StatsModel.GetValue(StatId.RangeDamage);
         damageValue = ModifyDamageCrit(damageValue);
         damage.SetDelta(damageValue);
         _attackRange.Check();

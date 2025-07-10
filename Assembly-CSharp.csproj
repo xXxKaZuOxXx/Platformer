@@ -105,11 +105,15 @@
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Hero\HeroInputReader.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Hero\InputEnableComponent.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Hero\Shield.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Hero\UltraDamage.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\BossFloodState.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\BossNextStage.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\BossNextStageWithoutLight.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\BossShootState.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\BossSpecialAttacking.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\ChangeLightComponent.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\FloodController.cs" />
+    <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\GameObjectController.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Boss\HealthAnimationGlue.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\MobAI.cs" />
     <Compile Include="Assets\Scripts\PixelCrew\Creatures\Mobs\Patrolling\Patrol.cs" />
@@ -400,14 +404,14 @@
     <Reference Include="UnityEditor">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.40f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Editor">
-      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.40f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -826,6 +830,9 @@
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="Analytics">
+      <HintPath>Library\ScriptAssemblies\Analytics.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
@@ -874,6 +881,9 @@
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
       <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
@@ -885,12 +895,6 @@
     </Reference>
     <Reference Include="Unity.MemoryProfiler.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.MemoryProfiler.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Analytics">
-      <HintPath>Library\ScriptAssemblies\Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

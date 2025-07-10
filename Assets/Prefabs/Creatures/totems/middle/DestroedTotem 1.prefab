@@ -416,7 +416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3183278250094151508}
   - component: {fileID: -7675483184407295984}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DestroedTotem 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
